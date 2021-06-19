@@ -1,0 +1,19 @@
+JPort:
+Port Forwarding
+UPNP(TCP, UDP)
+NAT-PMP
+PCP
+Ability to grab all port mappings
+Ability to remove port mappings
+Ability to add port mappings
+Auto refresh if the protocol calls for it at half life if required
+
+Dynamic DNS:
+Dynamic DNS(so you can assign an ip address that is readable and doesn't change)
+Also if dynamic dns fails provide a way around it
+
+Ip features:
+static ip for laptop
+static ip for network
+
+figure out why minecraft can't connect using network ip adress on the same network

@@ -1,0 +1,110 @@
+JML-MC-API-Installer:
+- offline patches to minecrat.jar / minecraft_server.jar
+- everything is public -final offline and in memory
+- mc jar is merged or server is enabled as a library
+- mc jar is deobed
+- cached asm for final transformed jars
+- allow modders to use bytecode framework
+- the jar is simple names even for mods using asm
+- minecraft obfscation to speed up execution?
+- minecraft crash reports are deboed
+
+JML-MC-API:
+- 1.6.4 basecode heavily modified
+- any minecraft libraries I have written will be enabled by default for modders to use
+- universal or interchangeable apis
+- won't add any gamebraking features ever enabled by default
+- mc updates are applied as mods rather then constantly porting to unstable codebases
+- if an mc /jml-mc-api api change does occur it will be applied on this api level itself
+- events or solutions for them
+- capabilities both using asm and without
+- central registries
+- ids are extended to integer
+- multi threading for no lag
+- garbage collection fixed
+- deobed crash reports
+- overhauled resource packs
+- custom chunk format
+- custom rendering voxel, obj, ittemrenderer
+- custom system.exit or exit hooks?
+- options are per minecraft version or even per modpack (for modpack mode)
+- options are now in a proper mod config file
+- ticking fix
+- te fix
+- light overhauled (allowed per version and even in resource packs)
+- any apis to make minecraft more modding friendly
+- auto detect mic change
+- auto detect network change
+- deny user if not joinable
+- hardware acceleration (graphics(vbos etc...), sound and maybe more)
+- definitions for what an object is example: item
+- keybinds overhauled
+- liquid & bucket api
+- entity eggs item added by default
+- missing features from bedrock including resource packs
+- removed button of realms as it's not really playable anyways (have 24hr server free host in future instead)
+- fuel api
+- fire api
+- recipes
+- chests
+- dungeon hooks
+- world gen
+- world gen hooks
+- guis
+- minecraft content stripped away and applied modulary per version of the game starting in 1.6.4+ and in future versions < 1.6.4 to first version of the game all using the modern codebase
+- shaders
+- compatibility open gl context so what code can't run on higher drivers won't run
+- vertical chunks
+- rtx if supported? (need graphics guy)
+- supports up to opengl 4.6
+- surround sound DTS 7.1/Adobe Surround Sound/OpenAL/3D sound
+- colored lighting support (examples include cls and albedo mod)
+- enum support or conversion to object
+- tnt fix
+
+Multi threading:
+- network on separate thread
+- server on separate thread
+- client on separate thread
+- chunk loading on separate thread
+- light loading on separate thread
+- chunk invidually loading on separate threads
+- entities on separate thread
+- te loading on separate thread
+- better handle rendering????
+
+Anti Lag:
+- garbage collection fixed
+- multi threading loading on mods
+- multi threading in game
+- players can't enter chunks that are not loaded yet
+- level of detail decreases in distance
+
+Graphics Fix:
+- anti alaising
+- level of detail
+- mip mapping
+- fix minecraft animations lagging game even in menu
+
+Minecraft Level Of Detail and Graphical Chunks:
+- render distance is now the actual distance it will render regardless of whether or not the chunk is loaded
+- chunk distance is now a separate option rather then integrated into render distance and is by default synced to render distance
+- ticking distance, the distance it will tick the chunks to
+- chunks that render but, are not loaded are called virtual chunks
+- the level of detail will change in the distance of how much is actually rendered dramatically reducing lag
+- level of detail can be turned down or off
+- entity render distance
+- minecraft entity disappear distance or off
+- virtual chunks entities boolean
+- virtual chunks te entities boolean
+
+Major bug fixes:
+- uuid bugs
+- menu framerate
+- menu music bug
+- dimensions load then unload instantly on world creation
+- texture packs don't work right till 1.13
+- main menu flashes when creating a world for no reason
+- any issues from optifine, foamfix or vanilla fix, or evil notch lib
+- when loading mods goes blurry then goes somewhere else fixes itslef and hides?
+- knockback / rltweaker / knockback tilt

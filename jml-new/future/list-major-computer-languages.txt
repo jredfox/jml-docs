@@ -1,0 +1,20 @@
+Possible for JML to possibly port to:
+java
+python
+kotlin
+C++
+C#
+C
+Rust
+Ruby
+AngelScript
+Perl
+Pascal?
+
+Not Supported:
+scala
+java script
+PHP
+Delphi
+PL-SOL
+

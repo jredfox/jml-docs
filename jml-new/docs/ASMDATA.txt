@@ -1,0 +1,25 @@
+prefixes
+i = int(boolean is int 0 or 1)
+l = long(2 slots)
+s = short
+b = byte
+c = character
+f = float
+d = double(2 slots)
+a = reference
+
+descriptors:
+V = void
+Z = boolean
+C = char
+S = short
+I = int
+F = float
+J = long
+D = double
+[type = type[]
+L<class> = class
+
+Example: L/net/minecraft/util/math/BlockPos
+for methods:
+descriptos params go between "()" and are seperated by ";"

@@ -1,0 +1,14 @@
+  Jredfox Configurations
+  {
+	YAML
+	JSON
+	XML
+	CFG (ModConfig)
+	LLIB (Line Library, 3.0+ supports sectioning)
+	TXT (Simple Application Configuration Mapping)
+	NBT
+	CSV
+	TSV
+	DSV
+        TOLM / Properties
+  }

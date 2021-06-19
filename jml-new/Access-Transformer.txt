@@ -1,0 +1,5 @@
+Acess Transformer:
+- private public / protected -final modifyers
+- package:"*" -final #makes everything public minus final
+- when making a protected method public it actually just creates a public method with _at in the same class
+- uses bytecode proxy so people can call it in the IDE

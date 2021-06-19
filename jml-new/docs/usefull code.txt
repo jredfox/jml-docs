@@ -1,0 +1,2 @@
+Thread.currentThread().setContextClassLoader(classLoader);//set the class loader for the current thread from there you can implement asm
+ClassLoader.addURL(filejar.toURI().toURL());//inject the jars into the class loader

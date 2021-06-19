@@ -1,0 +1,32 @@
+SelfCommandPrompt
+Versioning
+Configurations
+Jredfox Lib & Dependancies
+{
+    https://addons-ecs.forgesvc.net/api/v2/addon/{addonID}/file/{fileID}/download-url
+    Direct URL
+    Indirect URL if type specified supports it:{curseforge, maybe my website}
+    Supports Maven and Semantic Versioning
+    Version has to be specified inside Lib
+}
+Archive
+Reflection
+Jredfox's Commons
+JPort
+ASM FrameWork
+{
+   Bytecode Proxy for IDE
+   Class Unifyer
+   ByteCode Utils
+   Access Transformer
+   ASM-Loader(order, cacher)
+   ASM-Proxy
+   Jredfox Deobfuscator & Remapper
+}
+Java-Fixer(support only JRE 8 with this for now)
+JML(Itself)
+JML-MC-API
+JML-Installer
+Picture Codecs
+Audio Codecs
+Jredfox's Sorround Sound

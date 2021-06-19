@@ -1,0 +1,2 @@
+Ability to make deobfscation easier
+Re-Mapper for jars a,b,c > specified mapping

@@ -1,0 +1,13 @@
+Issues:
+- data structures do not support custom comparatores
+- data structures do not support more then integer max value (create them?)
+- File api returns null for getParent(), getParentFile() for realtive paths instead of new File("")
+- File doesn't contain visable function (should be usable for all desktops linux, macOs, windows)
+- File renameTo doesn't work anymore
+- ZipApi is trash
+- shutdown hooks not working in command prompt terminals
+- no standard libraries unlike c++ and python
+- Date/Calendar objects are flawed
+- no control for read / write / execute on windows and mac/linux and possibly android
+- exiting doesn't fire from native terminals
+- JFrame graphics

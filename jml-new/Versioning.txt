@@ -1,0 +1,7 @@
+  Jredfox Versioning
+  {
+	Selection API
+	Semantic Versioning
+	Maven Versioning
+	Dev-State Versioning
+  }

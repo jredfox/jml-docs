@@ -1,0 +1,1 @@
+Ability to use a dirty jar to override what IDEs thinks the classes are from transformed classes

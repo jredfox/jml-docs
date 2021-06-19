@@ -1,0 +1,18 @@
+Delimiterized Separated Value
+
+CVS/TSV/DSV:
+column is composed of fields
+column must contain the same amount of fields
+field in a colum is seperated by the delimiter
+colum end is where a new line fed is entired outside of a field
+DSV can container a header which tells the user what field represents what data
+Field containing the delimiter, a quote, line break, or leading/trailing spacing the field must be quoted
+field that contains a quote char must be escaped by a quote
+
+Blank colums when parsing are ignored
+Comments can exist if implemenation supports it
+DSV fields can have a space for show: a, b, c
+
+CSV Example:
+22,"a big ""fat"" c,v,s
+file",A Space Trimmed

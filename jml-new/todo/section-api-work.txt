@@ -1,0 +1,31 @@
+modid:bloc$k <meta> {} value $40.00$
+
+Section("", "", "\"", "\"")
+Section("<", ">", "\"", "\"", false)
+Section("{", "}", "\"", "\"", false, true)
+Section("", "", "", "", true)
+Section("$", "$", "", "")
+
+TODO:
+if section end isEmpty when building invalid chars continue until it can get a valid ending
+parsing api error
+
+section api error is thrown if a section end isEmpty and the next required or optional sections start isEmpty
++ invalid chars get built untill the next required sections start
++ invalid chars are section starting or ending values if start isEmpty
+invalid chars are ignored inside of comments
+parsing exception is thrown if a required section is not found
+parsing exception is thrown if the section doesn't end
+parsing exception is thrown if comment doesn't have an ending value
+sections parsed value won't contain the start or ending chars of the section
+
+
+WIP:
+1.2.3-pre-release.1+10
+
+line library:
+"modid:block" :22,33: <9=ZF> = <Plains Biome>
+
+support escape sequences
+support multiple characters
+support character ranges like regex

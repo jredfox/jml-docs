@@ -1,0 +1,31 @@
+Common Archive File Formats:
+rar1-rar5?
+zip
+7z
+GZ
+JAR
+TAR
+TAR.GZ
+
+Future archive format to support:
+EXE(archive)
+ISO
+ARJ
+BZ2
+CAB
+ISO
+LZ
+LZH
+UUE
+XZ
+Z
+ZIPX
+001
+
+Other archives:
+WAR
+RAR (resource adapter archive)
+EAR 
+SAR
+APK 
+AAR

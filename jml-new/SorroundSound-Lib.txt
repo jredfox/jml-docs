@@ -1,0 +1,4 @@
+supports:
+- DTS 7.1
+- Adobe Sorround Sound
+- 3D sorround Sound

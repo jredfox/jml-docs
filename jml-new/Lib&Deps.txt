@@ -1,0 +1,8 @@
+  Jredfox Lib & Dependancies
+  {
+    https://addons-ecs.forgesvc.net/api/v2/addon/{addonID}/file/{fileID}/download-url
+    Direct URL
+    Indirect URL if type specified supports it:{curseforge, maybe my website}
+    Supports Maven and Semantic Versioning
+    Version has to be specified inside Lib
+  }

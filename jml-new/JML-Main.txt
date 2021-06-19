@@ -1,0 +1,85 @@
+ModLoading:
+- fast and clean
+- loading order based on id and deps
+- loading based on client, dedicated server, both
+- loads per game and per api (minecraft could have my base api and other peoples apis)
+- bytecode framework for easy base class editing and manipulation while still being compatible with other mods
+- loading stages: game, registry
+- registry
+- points directly to mods / coremods / ats
+- java standard library framework to help make modding with ease
+- universal and or interchangeable apis for advanced compatability
+- capabilities
+- compatability (mods will be able to edit the same class while being compatible)
+- central registry
+- events? or a solution for events
+- Builtin configurations for mods
+- programable mod loader which binds it to a specified game by an api jar
+
+Bytecode Framework:
+- jar mods
+- access transformers
+- asm
+- class unifyers
+- easy enums
+- capabilities
+
+Fast Mod Loading:
+- direct to mod classes
+- direct to event classes
+- direct to jar mod & jar patches
+- direct points to ats
+- direct points to coremods
+- multi threading
+- cached ASM
+- fat jar for modpack final creation #all mods and libraries in a single jar speeds up loading time!
+
+IDE Features:
+- programable per game
+- loader contains 0 game code
+- everything public - final
+- easy high level bytecode manipulation using Class Modification Unifyer (CMU)
+- JML Developement kit (for compiling your mods)
+
+META-INF.mf:
+ML:JML
+ML-Version:1.0.0//(SemanticVersion or another type depends on the mod loader)
+ML-API: JML-MC-API
+Game:Minecraft
+GameVersion:1.6.4
+RamAdded:1094 # (amount of bytes to compute to add for dynamic ram if not overriden by the user)
+customJVM:SizeOf="customArgs" #custom jvm args appened to the jvm args this is dangerous
+
+Mods.json
+[
+{
+
+"Mod":
+{
+   class: com.main.TestMod
+   modId: modid#4097
+   modName: "Mod Name"
+   logo:Meta-INF/modid#4097.png
+   eventclasses:[] #auto filled each compilation
+},
+
+Deps
+[
+  {
+     type:Mod #type can be lib to
+     version:1.0.0
+     projectId:(curseforge, jml future)
+     fileId:(curseforge, jml future)
+     dl:url #not required if you have projectId & fileId
+     md5: #not required if you have projectId & fileId also md5 is fastest out of all hashes while still being secure
+  }
+]
+
+"CoreMod:
+{
+  AcessTransformer: META-INF/mod#4097.at
+  class: com.transformer.Coremod
+}
+
+}
+]
