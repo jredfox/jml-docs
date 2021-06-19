@@ -27,7 +27,6 @@ Bytecode Framework:
 Fast Mod Loading:
 - direct to mod classes
 - direct to event classes
-- direct to jar mod & jar patches
 - direct points to ats
 - direct points to coremods
 - multi threading
@@ -48,11 +47,13 @@ ML-API: JML-MC-API
 Game:Minecraft
 GameVersion:1.6.4
 RamAdded:1094 # (amount of bytes to compute to add for dynamic ram if not overriden by the user)
-customJVM:SizeOf="customArgs" #custom jvm args appened to the jvm args this is dangerous
+customJVM:SizeOf="customArgs" #custom jvm args appended to the jvm args
 
 Mods.json
 [
 {
+
+"accessTransformer": "META-INF/modid#4097.at",
 
 "Mod":
 {
@@ -73,12 +74,14 @@ Deps
      dl:url #not required if you have projectId & fileId
      md5: #not required if you have projectId & fileId also md5 is fastest out of all hashes while still being secure
   }
-]
+],
 
 "CoreMod:
 {
-  AcessTransformer: META-INF/mod#4097.at
   class: com.transformer.Coremod
+  modId: modid_core#2490
+  modName: "Core Mod Name"
+  logo:Meta-INF/modid_core#2490.png
 }
 
 }

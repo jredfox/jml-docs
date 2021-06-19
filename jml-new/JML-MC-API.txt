@@ -1,13 +1,11 @@
 JML-MC-API-Installer:
 - offline patches to minecrat.jar / minecraft_server.jar
 - everything is public -final offline and in memory
+- mc jar is deobed with simple names
 - mc jar is merged or server is enabled as a library
-- mc jar is deobed
 - cached asm for final transformed jars
 - allow modders to use bytecode framework
-- the jar is simple names even for mods using asm
-- minecraft obfscation to speed up execution?
-- minecraft crash reports are deboed
+- download minecraft updates as mods to the version specified by the user
 
 JML-MC-API:
 - 1.6.4 basecode heavily modified
