@@ -1,0 +1,89 @@
+CentralRegistry<id, ModTag, Object>
+min id: Long.min_value
+max id: Long.max_value
+map storage: starts out postive for the lowest data type then fill out lowest for the data type for example 0-126 then -1 - -127 for byte. does byte, short, int, long
+examples Map<byte(id), ModTag, Object>
+#currentId //used for autoAssigning
+register all ids on startup
+dump all ids
+re-register when applicable
+unregister when applicable
+modlist will extend central registry to save memory
+
+ModTag:
+A-Z,a-z,0-9,_-.
+modid:<object_category>:objId
+if starts with minecraft:obj will actually turn into just obj for memory reasons
+cannot end / start with "_-." characters for File System reasons
+example: /summon minecraft:entities:ghast or /summon entities:ghast since minecraft: isn't nesecary
+example 2: /setblock aetherii:blocks:grass
+Fields:
+#domain
+#sku //in case of conflict users will have to use the modid#sku:objCat:objId
+#objectName
+
+conflicting modids:
+- An ASM mod will be auto created for it the next launch. the strings modid: or modid#sku: will get changed to a new unused sku and or modid and saved into the config
+this should never have to be changed report this as a bug to the mod author
+- cloud computing is disabled for configured modids or skus
+- mods should use JML#getModByUUID("modid", "uuid")#modid to avoid having incompatability issues with modid conflicts / changing
+
+SKU: 3,600,000,000 (36^8) possibilities
+A-Z, 0-9 with 8 digets being required
+sku is not a replacement for modid it just becomes modid#sku in case of conflict
+not required for commands unless it's conflicting as the modid's sku can be fetched
+
+when joining world:
+- insecure fast: lists modid#sku and version numbers
+- secure slow: list of md5 mod files and if enabled config file md5s
+- servers can deny client only mods when joining
+- some servers may require a password to join
+
+on world conversion load: 
+checks id mappings and if it doesn't match current registry will give user prompt to go to the main menu or convert now
+conversion will remapp any ids that don't match the current ids in the registry and for non existing ids will convert them to their ModTag with sku. the ModTag will get get converted properly when the mod gets re-added.
+ModTag that don't exist for the current mod yet still have the same domain will maintain it's id until it gets replaced in game
+
+Mod Registration Objects Unloading to Save memory:
+- models
+- textures
+- registrations <id, obj>
+- trash collection for <id, obj> when unregistering
+- triggers when client transfers into another dimension / main menu
+- triggers when dedicated server unloads a dimension
+- triggers on chunk unload if configurable x amount of objects from different dimensions are being used
+- triggers on client inventory close if in creative mode or use like NEI / JEI becomes an option
+- note: anydim will always keep everything load. not recommended for using unless you have an object like an entity that spawns in every dimension
+- note: will re-register items in a recipe book if you have the items to create it
+- note: unloading registration can be turned off in the config but isn't recommended as you can quickly run out of memory due to quantity of Mod objects registered and all kept in memory
+
+jml cloud computing id mapping:
+- provides id mapping files offsetIndex, ModTag file. this will give the mod loader ability to surpase storage capacity of 100-480GB of id mapping data assuming users are on a 256GB-500GB Harddrive
+- requires game id, config md5(allow multiple outputs if mod has configurable items blocks etc.. via config), modid, version
+- tmp mappings will be downloaded used and then deleted if physical storage capacity or allowed configed capacity is exceeded after request
+- configurable on / off
+- requires modid#sku
+- your physical mapping files when this is enabled will be int-int_modid like normal it just won't have anything in them. it just has the reserved id blocks so jml knows what the start and end ids are
+
+_________________________________
+id mapping files:
+{
+	amount of ids:short.max_value
+	file name: long-long_modid#sku
+}
+inside: 
+section:blocks
+{
+	integer id
+	ModTag:stone
+}
+NOTE: the modid:blocks:stone isn't needed as it's in modid section blocks saves space and memory
+
+chunk optimizations:
+empty chunks are 0 bytes
+16x16 rows instead of everything in one array
+16x0 rows for air where [0] = null
+16x1 rows for rows that are completly full
+use byte,short,int,long as ids rather then resource locations unless ModTag is required
+biome as a single id per entire chunk
+try to optimize light mapping or fix it so it's non laggy

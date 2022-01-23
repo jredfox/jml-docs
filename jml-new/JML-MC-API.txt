@@ -106,3 +106,5 @@ Major bug fixes:
 - any issues from optifine, foamfix or vanilla fix, or evil notch lib
 - when loading mods goes blurry then goes somewhere else fixes itslef and hides?
 - knockback / rltweaker / knockback tilt
+- chunks causing massive amounts of ram allocation for 64 render distence
+- constant static arrays and registries everywhere causing unessary ram allocation massivley with mods

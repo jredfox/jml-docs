@@ -1,2 +1,5 @@
 Thread.currentThread().setContextClassLoader(classLoader);//set the class loader for the current thread from there you can implement asm
-ClassLoader.addURL(filejar.toURI().toURL());//inject the jars into the class loader
+ClassLoader.systemClassLoader()
+ClassLoader.addURL(filejar.toURI().toURL());//inject the jars into the class loader DOESN'T ADD THEM TO THE JAVA.CLASS.PATH???
+URL.setURLStreamHandlerFactory #url stream handler factory
+System class loader should be equal to current thread for mod loader

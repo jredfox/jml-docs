@@ -15,6 +15,7 @@ ModLoading:
 - events? or a solution for events
 - Builtin configurations for mods
 - programable mod loader which binds it to a specified game by an api jar
+- central registry where it can contain billions of indexes without taking up that much ram
 
 Bytecode Framework:
 - jar mods

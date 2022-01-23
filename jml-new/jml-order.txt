@@ -1,6 +1,8 @@
-SelfCommandPrompt
+OpenTerminal
+Reflection
 Versioning
 Configurations
+Shortcuts
 Jredfox Lib & Dependancies
 {
     https://addons-ecs.forgesvc.net/api/v2/addon/{addonID}/file/{fileID}/download-url
@@ -10,7 +12,6 @@ Jredfox Lib & Dependancies
     Version has to be specified inside Lib
 }
 Archive
-Reflection
 Jredfox's Commons
 JPort
 ASM FrameWork
@@ -27,6 +28,20 @@ JML(Itself)
 JML-MC-API
 JML-Installer
 JML-Devolpement kit
+{
+   OpenTerminal
+   LibLoader
+   Serializable properties
+   Compiler#uses self command prompt
+   {
+        meta-inf
+        classes in root dir
+        src
+	lib loader#for embedded libs
+        jml-data#asm-data, jar mods, ats, events, mod data, deps
+   }
+   SetupWorkspace#bytecode proxy, ats, remapping
+}
 Picture Codecs
 Audio Codecs
 Jredfox's Sorround Sound

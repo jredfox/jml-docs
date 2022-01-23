@@ -11,3 +11,7 @@ Issues:
 - no control for read / write / execute on windows and mac/linux and possibly android
 - exiting doesn't fire from native terminals
 - JFrame graphics
+- HTTP errors are not properly handled. 404 is treated as FileNotFoundException and generic errors are generic IOExceptions make a new api wrapper that throws the proper errors
+- no runnable.jar for the directory
+- java user.dir doesn't update for File#getAbsolutePath and Paths#getAbsolutePath after updating it even though it's a simple string
+- FTP doesn't support any error codes
