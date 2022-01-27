@@ -8,7 +8,7 @@ ids are registered straight to a file on startup
 re-register when applicable
 unregister when applicable
 registry mappings (id, modtag, obj) single file or broken up into id blocks of Short.max_value whatever is proven to be fastest
-registry mappings (modtag, id, obj) per modid domain
+JML mods will store the blocks in which ids are registered in order to retrieve modtag > id
 
 ModTag:
 A-Z,a-z,0-9,_-.
