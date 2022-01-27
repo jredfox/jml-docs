@@ -9,6 +9,7 @@ dump all ids
 re-register when applicable
 unregister when applicable
 modlist will extend central registry to save memory
+CentryalRegistry will be stored entirely onto the disk when indexes are not in use using an indexed text file with an unsigned long max value capacity
 
 ModTag:
 A-Z,a-z,0-9,_-.
@@ -25,11 +26,10 @@ Fields:
 conflicting modids:
 - An ASM mod will be auto created for it the next launch. the strings modid: or modid#sku: will get changed to a new unused sku and or modid and saved into the config
 this should never have to be changed report this as a bug to the mod author
-- cloud computing is disabled for configured modids or skus
 - mods should use JML#getModByUUID("modid", "uuid")#modid to avoid having incompatability issues with modid conflicts / changing
 
 SKU: 3,600,000,000 (36^8) possibilities
-A-Z, 0-9 with 8 digets being required
+A-Z, 0-9 with 8 digits being required
 sku is not a replacement for modid it just becomes modid#sku in case of conflict
 not required for commands unless it's conflicting as the modid's sku can be fetched
 
@@ -53,31 +53,13 @@ Mod Registration Objects Unloading to Save memory:
 - triggers when dedicated server unloads a dimension
 - triggers on chunk unload if configurable x amount of objects from different dimensions are being used
 - triggers on client inventory close if in creative mode or use like NEI / JEI becomes an option
-- note: anydim will always keep everything load. not recommended for using unless you have an object like an entity that spawns in every dimension
 - note: will re-register items in a recipe book if you have the items to create it
 - note: unloading registration can be turned off in the config but isn't recommended as you can quickly run out of memory due to quantity of Mod objects registered and all kept in memory
 
 jml cloud computing id mapping:
-- provides id mapping files offsetIndex, ModTag file. this will give the mod loader ability to surpase storage capacity of 100-480GB of id mapping data assuming users are on a 256GB-500GB Harddrive
-- requires game id, config md5(allow multiple outputs if mod has configurable items blocks etc.. via config), modid, version
-- tmp mappings will be downloaded used and then deleted if physical storage capacity or allowed configed capacity is exceeded after request
-- configurable on / off
-- requires modid#sku
-- your physical mapping files when this is enabled will be int-int_modid like normal it just won't have anything in them. it just has the reserved id blocks so jml knows what the start and end ids are
-
-_________________________________
-id mapping files:
-{
-	amount of ids:short.max_value
-	file name: long-long_modid#sku
-}
-inside: 
-section:blocks
-{
-	integer id
-	ModTag:stone
-}
-NOTE: the modid:blocks:stone isn't needed as it's in modid section blocks saves space and memory
+- world and main registry mappings could use a url in order to fetch the mappings
+- connection will stay open when game / world is open then when an id is needed it will fetch it by it's long id index value
+- url doesn't have to be online but could be stored from an external hardrive
 
 chunk optimizations:
 empty chunks are 0 bytes
