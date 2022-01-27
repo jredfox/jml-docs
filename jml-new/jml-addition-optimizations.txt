@@ -4,12 +4,11 @@ max id: Long.max_value
 map storage: starts out postive for the lowest data type then fill out lowest for the data type for example 0-126 then -1 - -127 for byte. does byte, short, int, long
 examples Map<byte(id), ModTag, Object>
 #currentId //used for autoAssigning
-register all ids on startup
-dump all ids
+ids are registered straight to a file on startup
 re-register when applicable
 unregister when applicable
-modlist will extend central registry to save memory
-CentryalRegistry will be stored entirely onto the disk when indexes are not in use using an indexed text file with an unsigned long max value capacity
+registry mappings (id, modtag, obj) single file or broken up into id blocks of Short.max_value whatever is proven to be fastest
+registry mappings (modtag, id, obj) per modid domain
 
 ModTag:
 A-Z,a-z,0-9,_-.
@@ -24,9 +23,9 @@ Fields:
 #objectName
 
 conflicting modids:
-- An ASM mod will be auto created for it the next launch. the strings modid: or modid#sku: will get changed to a new unused sku and or modid and saved into the config
-this should never have to be changed report this as a bug to the mod author
-- mods should use JML#getModByUUID("modid", "uuid")#modid to avoid having incompatability issues with modid conflicts / changing
+- if both the modid and sku conflicts an asm mod will be created for them both replacing the strings of modid: and modid#sku:
+- to be aware of changing sku's modders should make them configurable
+* warning changing the mod's sku will result in incompatabilities from the mod's sku changing and going into a previous world the items would now not load
 
 SKU: 3,600,000,000 (36^8) possibilities
 A-Z, 0-9 with 8 digits being required
@@ -39,7 +38,7 @@ when joining world:
 - servers can deny client only mods when joining
 - some servers may require a password to join
 
-on world conversion load: 
+on world conversion load:
 checks id mappings and if it doesn't match current registry will give user prompt to go to the main menu or convert now
 conversion will remapp any ids that don't match the current ids in the registry and for non existing ids will convert them to their ModTag with sku. the ModTag will get get converted properly when the mod gets re-added.
 ModTag that don't exist for the current mod yet still have the same domain will maintain it's id until it gets replaced in game
@@ -49,10 +48,10 @@ Mod Registration Objects Unloading to Save memory:
 - textures
 - registrations <id, obj>
 - trash collection for <id, obj> when unregistering
-- triggers when client transfers into another dimension / main menu
+- triggers when client transfers into another dimension
+- triggers when client leaves to the main menu
 - triggers when dedicated server unloads a dimension
-- triggers on chunk unload if configurable x amount of objects from different dimensions are being used
-- triggers on client inventory close if in creative mode or use like NEI / JEI becomes an option
+- triggers on chunk unload if configurable x amount of objects are in use
 - note: will re-register items in a recipe book if you have the items to create it
 - note: unloading registration can be turned off in the config but isn't recommended as you can quickly run out of memory due to quantity of Mod objects registered and all kept in memory
 
