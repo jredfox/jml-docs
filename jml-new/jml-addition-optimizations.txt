@@ -7,8 +7,12 @@ examples Map<byte(id), ModTag, Object>
 ids are registered straight to a file on startup
 re-register when applicable
 unregister when applicable
-registry mappings (id, modtag, obj) single file or broken up into id blocks of Short.max_value whatever is proven to be fastest
-JML mods will store the blocks in which ids are registered in order to retrieve modtag > id
+registry will be stored onto the disk via single file or multiple whichever tests faster
+
+central registry method a: each line has a set amount of bytes 68 bytes to quickly compute amount of bytes skipped to fetch in the registry mapping id, modid#sku
+central registry mapping b: each line will get fetched from an id block between 1,000 and short max value blocks. they will get parsed into memory and then unparsed when too many exists in memory
+central registry mapping c: has the same method as a however it's broken up per modid instead and the first line will give the info on how many bytes to skip instead
+central registry method d: test to see if mysql is a valid solution for my situation
 
 ModTag:
 A-Z,a-z,0-9,_-.
@@ -21,6 +25,7 @@ Fields:
 #domain
 #sku //in case of conflict users will have to use the modid#sku:objCat:objId
 #objectName
+#dimensionId (anyDim, overworld etc...)
 
 conflicting modids:
 - if both the modid and sku conflicts an asm mod will be created for them both replacing the strings of modid: and modid#sku:
@@ -68,3 +73,10 @@ empty chunks are 0 bytes
 use byte,short,int,long as ids rather then resource locations unless ModTag is required
 biome as a single id per entire chunk
 try to optimize light mapping or fix it so it's non laggy
+
+ints, arrays, and resource location copies o my!:
+- integer cacheing including byte short, int long in weak maps
+- resource location are now ModTags and will be cached in weak maps
+- what will use the cache?: chunks, maybe blockpos, registry and massive amounts of repetitive number calling whenever I see it
+- tell modders to only store what they need in memory during registration and dump any arrays that were used to create them afterwards
+- why?: this will take the same data in order to retrieve the primitive objects but use a cache imediatly afterwords of it fetching therefore 100k calls of a single integer of dirt with id of 1 will be one memory location only the index will take up memory
