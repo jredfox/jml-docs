@@ -18,6 +18,7 @@ method 1: re-registeres using modid mappings #too slow as mods don't have a limi
 method 2: re-registers using dimId all at once #too slow and users can have the ids in another dimension
 
 Notes: creative tabs will have to use the same method as the central registry or mysql and be pre-computed during registration as there is no limit on the size of them and be indexed by id sections or pages. especially for pages like the search all tab
+dynamic per opening items will still be an option but, users would have to select what index page to put it in and won't get saved. Also not recomendded as it will always be kept in memory
 
 ModTag:
 A-Z,a-z,0-9,_-.
@@ -30,7 +31,6 @@ Fields:
 #domain
 #sku //in case of conflict users will have to use the modid#sku:objCat:objId
 #objectName
-#dimensionId (anyDim, overworld etc...)
 
 conflicting modids:
 - if both the modid and sku conflicts an asm mod will be created for them both replacing the strings of modid: and modid#sku:
