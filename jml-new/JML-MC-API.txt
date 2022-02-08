@@ -127,6 +127,5 @@ sound engine:
 - lwjgl 3d sound
 
 adroid / IOS / IPadOS / Fire os:
-- cannot run java
+- has no JVM therefore cannot run java or jar files
 - can compile into their native languages however it brings difficulties of my class unifyer and graphics api
-- therefore if I do do a port of mobile devices in the future I will have to support opengl es as a graphics api and re-write my class unifyer to work with mac android and amazon devices
