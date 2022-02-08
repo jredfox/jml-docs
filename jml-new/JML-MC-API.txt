@@ -116,20 +116,17 @@ hardware acceleration:
 - on graphical objects such as models textures etc
 
 graphics apis:
-- this api will focus only on opengl
+- this api will only support opengl
 - interchangeable graphics apis
 - mods that don't support the current graphics api will cause a crash example: tries to use opengl code when directx is running
-- supported graphic apis engines, directx 11-12, opengl, mobile/apple(openglES, metal), vulkan
-- the default graphics engine for this api will be only opengl and then later vulkan
+- graphic apis engines, directx 11-12, opengl, mobile/apple(openglES, metal), vulkan
 
 sound engine:
 - DTS:X(7.1)
 - Adobe(5.1 is what I heard)
 - lwjgl 3d sound
 
-adroid / IOS / IPadOS / Fire os port:
-- has no JVM therefore cannot run java or jar files
-- class unifyer has to get re-written for android and object-c languages
-- graphics api is enforced to have both opengl es and metal graphics
-- compiles directly into two programs apk(android) and object-c(IOS devices)
+Mobile: adroid / IOS / IPadOS / Fire os port / Console Editions: xbox/playstation/nintendo switch
+- will not support as bedrock edition has already made ports to these edition
+- will not support as each one doesn't have JVM and each different graphics api
 
