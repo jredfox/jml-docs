@@ -108,3 +108,20 @@ Major bug fixes:
 - knockback / rltweaker / knockback tilt
 - chunks causing massive amounts of ram allocation for 64 render distence
 - constant static arrays and registries everywhere causing unessary ram allocation massivley with mods
+
+hardware acceleration:
+- on graphics
+- on networking
+- on sound
+- on graphical objects such as models textures etc
+
+graphics apis:
+- this api will focus only on opengl
+- interchangeable graphics apis
+- mods that don't support the current graphics api will cause a crash example: tries to use opengl code when directx is running
+- supported graphic apis engines, directx 11-12, opengl #vulkan and other apis can be added by a different mod
+
+sound engine:
+- DTS:X(7.1)
+- Adobe(5.1 is what I heard)
+- lwjgl 3d sound
