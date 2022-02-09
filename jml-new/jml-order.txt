@@ -25,6 +25,7 @@ ASM FrameWork
 }
 Java-Fixer(support only JRE 8 with this for now)
 JML(Itself)
+JML-Security applies to mods that wan't unmodified mods to run in JML using md5 / sha1 checking the jar will be encyrpted by default
 JML-MC-API
 JML-Installer
 JML-Devolpement kit

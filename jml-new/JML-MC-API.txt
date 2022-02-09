@@ -59,6 +59,9 @@ JML-MC-API:
 - colored lighting support (examples include cls and albedo mod)
 - enum support or conversion to object
 - tnt fix
+- all minecraft versions are applied as mods and all content within them
+- all minecraft object contents are applied in the format of mc_version:object and won't be registered if a previous version as already registered the same object with the same properties and textures. it will store what the original mapping of that version string however to prevent loss of blocks when converting chunks TE/Entity data
+- versional mods just like minecraft versions will be avalible to any mod wanting this feature, versional mods asm and event handling will also have to be setup in a versional way
 
 Multi threading:
 - network on separate thread
