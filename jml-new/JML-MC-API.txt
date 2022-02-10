@@ -112,8 +112,8 @@ Major bug fixes:
 - constant static arrays and registries everywhere causing unessary ram allocation massivley with mods
 
 Versional Mods:
-- all versions of the mods objects will be registered unless it's a duplicate
-- all versional mod contents are applied in the format of mc_version:objectType:object and won't be registered if a previous version as already registered the same object with the same properties and textures. it will store what the original mapping of that version string however to prevent loss of blocks when converting chunks TE/Entity data
+- mods objects will be registered unless it's a duplicate from a previous version
+- ModTag format is modid_version:objectType:object
 - versional mods asm & event handlers have the option to run versional asm & event handling which will fire always
 - versional mods asm & event handlers by regular means will only fire in the latest version of the versional mod
 - versional mods objects will have a registry mapping of all previous versions of the versional mod in which that object was duplicated by. for example 1.7 stone block is the same as 1.6 stone block
