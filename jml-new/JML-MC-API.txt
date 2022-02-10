@@ -111,39 +111,9 @@ Major bug fixes:
 - chunks causing massive amounts of ram allocation for 64 render distence
 - constant static arrays and registries everywhere causing unessary ram allocation massivley with mods
 
-modpacks:
-- can compile into a fatjar.jar with the modpack and all it's libs inside of it. the resources will be in a seperate jar called fatresources.jar
-- in the future will be able to compile directly into machine code fatjar.exe and resources.jar when ClassUnifyer supports native OS's for native launch speed
-
-Versional Mods:
-- mods objects will be registered unless it's a duplicate from a previous version
-- ModTag format is modid_version:objectType:object
-- versional mods asm & event handling will only handled by the latest version and previous versions will only fire if allowed to by the highest version
-- versional mods objects will have a registry mapping of all previous versions of the versional mod in which that object was duplicated by. for example 1.7 stone block is the same as 1.6 stone block
-
 hardware acceleration:
 - on graphics
 - on networking
 - on sound
 - on graphical objects such as models textures etc
-
-graphics apis:
-- interchangeable graphics apis but the api will only support by default opengl
-- mods that don't support the current graphics api will cause a crash example: tries to use opengl code when directx is running
-- graphic apis engines, directx 11-12, opengl, mobile/apple(openglES, metal), vulkan
-
-sound engine changeable per device:
-- DTS:X(7.1)
-- Adobe(5.1 is what I heard)
-- lwjgl 3d sound
-
-inputs:
-- xbox controller
-- ps5 controller
-- touchscreen with zoom
-- microphone(yes allowing for voice chat mods)
-
-Mobile: adroid / IOS / IPadOS / Fire os port / Console Editions: xbox/playstation/nintendo switch
-- will not support as bedrock edition has already made ports to these edition
-- will not support as each one doesn't have JVM and each different graphics api
 
