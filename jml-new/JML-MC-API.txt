@@ -11,7 +11,7 @@ JML-MC-API:
 - 1.6.4 basecode heavily modified
 - any minecraft libraries I have written will be enabled by default for modders to use
 - universal or interchangeable apis
-- won't add any gamebraking features ever enabled by default
+- won't add any gamebraking features ever enabled by default from minecraft updates
 - mc updates are applied as mods rather then constantly porting to unstable codebases
 - if an mc /jml-mc-api api change does occur it will be applied on this api level itself
 - events or solutions for them
@@ -35,7 +35,7 @@ JML-MC-API:
 - auto detect network change
 - deny user if not joinable
 - hardware acceleration (graphics(vbos etc...), sound and maybe more)
-- definitions for what an object is example: item
+- definitions for what an object is example: item, ore, wood
 - keybinds overhauled
 - liquid & bucket api
 - entity eggs item added by default
@@ -57,11 +57,8 @@ JML-MC-API:
 - supports up to opengl 4.6
 - surround sound DTS 7.1/Adobe Surround Sound/OpenAL/3D sound
 - colored lighting support (examples include cls and albedo mod)
-- enum support or conversion to object
+- enum support or conversion to object to support java 9+
 - tnt fix
-- all minecraft versions are applied as mods and all content within them
-- all minecraft object contents are applied in the format of mc_version:object and won't be registered if a previous version as already registered the same object with the same properties and textures. it will store what the original mapping of that version string however to prevent loss of blocks when converting chunks TE/Entity data
-- versional mods just like minecraft versions will be avalible to any mod wanting this feature, versional mods asm and event handling will also have to be setup in a versional way
 
 Multi threading:
 - network on separate thread
@@ -80,6 +77,8 @@ Anti Lag:
 - multi threading in game
 - players can't enter chunks that are not loaded yet
 - level of detail decreases in distance
+- on first launch of jml encourage windows users to use recommended power plan that will max out performance
+- on windows the priority will be high on the program
 
 Graphics Fix:
 - anti alaising
@@ -112,6 +111,13 @@ Major bug fixes:
 - chunks causing massive amounts of ram allocation for 64 render distence
 - constant static arrays and registries everywhere causing unessary ram allocation massivley with mods
 
+Versional Mods:
+- all versions of the mods objects will be registered unless it's a duplicate
+- all versional mod contents are applied in the format of mc_version:objectType:object and won't be registered if a previous version as already registered the same object with the same properties and textures. it will store what the original mapping of that version string however to prevent loss of blocks when converting chunks TE/Entity data
+- versional mods asm & event handlers have the option to run versional asm & event handling which will fire always
+- versional mods asm & event handlers by regular means will only fire in the latest version of the versional mod
+- versional mods objects will have a registry mapping of all previous versions of the versional mod in which that object was duplicated by. for example 1.7 stone block is the same as 1.6 stone block
+
 hardware acceleration:
 - on graphics
 - on networking
@@ -119,15 +125,20 @@ hardware acceleration:
 - on graphical objects such as models textures etc
 
 graphics apis:
-- this api will only support opengl
-- interchangeable graphics apis
+- interchangeable graphics apis but the api will only support by default opengl
 - mods that don't support the current graphics api will cause a crash example: tries to use opengl code when directx is running
 - graphic apis engines, directx 11-12, opengl, mobile/apple(openglES, metal), vulkan
 
-sound engine:
+sound engine changeable per device:
 - DTS:X(7.1)
 - Adobe(5.1 is what I heard)
 - lwjgl 3d sound
+
+inputs:
+- xbox controller
+- ps5 controller
+- touchscreen with zoom
+- microphone(yes allowing for voice chat mods)
 
 Mobile: adroid / IOS / IPadOS / Fire os port / Console Editions: xbox/playstation/nintendo switch
 - will not support as bedrock edition has already made ports to these edition
