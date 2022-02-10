@@ -53,7 +53,7 @@ modpack fingerprint:
 modpacks:
 - can compile into a fatjar.jar with the modpack and all it's libs resources. transformed classes will still be dirtyClasses.jar
 - fatjar can be compiled into a native fatjar. the ASM will all be precomputed into the jar before compilation. Final resutls: fatjar.exe, fatjar.pkg, fatjar.app etc... with x32, x64, arm64 depnding upon os and machine cpu architecture
-- native fatjars will probably have to be recompiled if an asm configuration change happens as I don't know if it's currently possible to update an exe with the update class file(s) even though I should be able to recompile them
+- native fatjars will have to be recompiled if an ASM change occurs
 
 Versional Mods:
 - mods objects will be registered unless it's a duplicate from a previous version
