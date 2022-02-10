@@ -1,12 +1,16 @@
 You hearby agree to the fallowing terms in order to use this modloader it's framework or it's libraries:
 - users can adapt, modify, publically display and distrubte mods and their libs / content, fork, create addons for without the mod author's consent
-- by uploading JML content to the internet you are agreeing as a mod author to have it always publically there even if the website you hosted EULA or owners changes. your personal data will not be used only the mod files and the description. description can get taken down under if it contains personal data. this is to prevent mods from randomly going down due to afk modders not constantly logging into the website they uploaded it to
+- by uploading JML content to the internet you are agreeing as a mod author to have the mod always publically there even if the website you hosted EULA or owners changes. your personal data will not be used only the mod files and the description. description can get taken down under if it contains personal data. this is to prevent mods from randomly going down due to afk modders not constantly logging into the website they uploaded it to
 - you will keep your rights on the mods to the extend of the game's eula allows however you have to allow users to use them the way they want to
 - you cannot have 3d party copywrited content inside your JML content that goes against this eula examples include but not limited to: an image which only is consented to be used in a mod that only allows distrubution to approved domains. this is not allowed. Your mod will get taken down
-- no mods containing, downloading or executing: malware, viruses, ransomeware c
+- no mods containing, downloading or executing: malware, viruses, ransomeware etc....
 - no political progeganda by a goverment officially or unofficially, cult or extremist group, terisim
 - no stealing personal data such as but not limited to: credit card information, physical addresses, passwords, account information
 - no using this mod loader to load mods on games that do not allow modding
 - mods are to be free to use and all of content including libraries, this also means no in-game purchases
 
 this EULA is to make sure users can use mods to their hearts content without worry about copy right infringement, remaining safe, and being happy
+
+terms:
+mod: can refer to the mod itself, it's content externally or internally, the libraries and files that are nessary to run it
+content: can refer to a mod or content related to what is being refered to in general
