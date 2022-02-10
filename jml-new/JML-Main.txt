@@ -104,6 +104,7 @@ Deps
      fileId:(curseforge, jml future)
      dl:url #not required if you have projectId & fileId
      md5: #not required if you have projectId & fileId also md5 is fastest out of all hashes while still being secure
+     autoUpdate:false #if true will automatically download the latest version from JML, curseforge or maven repositories. not supported for direct or inderect urls
   }
 ],
 
