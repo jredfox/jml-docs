@@ -4,6 +4,7 @@
 	JSON
 	XML
 	CFG (ModConfig)
+        BCFG(Binary Mod Config file default config)
 	LLIB (Line Library, 3.0+ supports sectioning)
 	TXT (Simple Application Configuration Mapping)
 	NBT
