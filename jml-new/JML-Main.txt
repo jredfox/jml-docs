@@ -41,6 +41,16 @@ IDE Features:
 - easy high level bytecode manipulation using Class Modification Unifyer (CMU)
 - JML Developement kit (for compiling your mods)
 
+Jar Sigining & Security Checks:
+- for hash checking JML will use md5-sha1 the chances of both hashing algorithms failing are next to none
+- secured mods will be encrypted and the key will be the meta-inf file's md5-sha1
+- secured mods will crash if the meta-inf check fails even if decyrption is sucessfull.
+
+modpack fingerprint:
+- ability to determine quickly if the modpack configuration, mods, libs are the same
+- skips config files that have not been modified
+- uses dirtyClases.jar for the same fingerprint, however it will not skip asm for dynamic transformers if it's not found in dirtyclasses.jar
+
 modpacks:
 - can compile into a fatjar.jar with the modpack and all it's libs inside of it. the resources will be in a seperate jar called fatresources.jar
 - in the future will be able to compile directly into machine code fatjar.exe and resources.jar when ClassUnifyer supports native OS's for native launch speed
@@ -103,7 +113,7 @@ Deps
      projectId:(curseforge, jml future)
      fileId:(curseforge, jml future)
      dl:url #not required if you have projectId & fileId
-     md5: #not required if you have projectId & fileId also md5 is fastest out of all hashes while still being secure
+     md5-sha1: #not required if you have projectId & fileId but will check if non blank
      autoUpdate:false #if true will automatically download the latest version from JML, curseforge or maven repositories. not supported for direct or inderect urls
   }
 ],
