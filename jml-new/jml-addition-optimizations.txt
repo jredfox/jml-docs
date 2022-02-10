@@ -1,6 +1,6 @@
 CentralRegistry<id, ModTag, Object>
-min id: Long.min_value
-max id: Long.max_value
+min id: Integer#MIN_VALUE
+max id: Integer#MAX_VALUE
 map storage: starts out postive for the lowest data type then fill out lowest for the data type for example 0-126 then -1 - -127 for byte. does byte, short, int, long
 examples Map<byte(id), ModTag, Object>
 #currentId //used for autoAssigning
