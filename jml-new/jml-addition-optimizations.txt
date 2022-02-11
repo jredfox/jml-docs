@@ -8,6 +8,7 @@ ids are registered straight to a file on startup
 re-register when applicable
 unregister when applicable
 registry will be stored onto the disk via single file or multiple whichever tests faster
+central registries will only load a new registry if the modpack's fingerprint has changed
 
 method a: 68 bytes per line and (256^4) lines per registry. first 4 bytes are the int the other 64 bytes is the ModTag with uuid. Using either MappedByteBuffer or something similar
 method b: re-registeres id blocks of 1k at a time and each block is a seperate file
