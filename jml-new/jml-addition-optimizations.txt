@@ -9,7 +9,7 @@ re-register when applicable
 unregister when applicable
 registry will be stored onto the disk via single file or multiple whichever tests faster
 
-method a: 68 bytes per line and (256^4) lines per registry. first 4 bytes are the int the other 64 bytes is the ModTag with sku. Using either MappedByteBuffer or something similar
+method a: 68 bytes per line and (256^4) lines per registry. first 4 bytes are the int the other 64 bytes is the ModTag with uuid. Using either MappedByteBuffer or something similar
 method b: re-registeres id blocks of 1k at a time and each block is a seperate file
 method d: test to see if mysql is a valid solution for my situation
 
@@ -23,35 +23,33 @@ Creative Tabs:
 
 ModTag:
 A-Z,a-z,0-9,_-.
-modid:<object_category>:objId
-if starts with minecraft:obj will actually turn into just obj for memory reasons
+modid:<cat>:objId
+if starts with minecraft: it will drop minecraft to save memory
+users in game should use domain:cat:obj instead of uuid:cat:obj as it's more user friendly but either one works
 cannot end / start with "_-." characters for File System reasons
 example: /summon minecraft:entities:ghast or /summon entities:ghast since minecraft: isn't nesecary
 example 2: /setblock aetherii:blocks:grass
 Fields:
 #domain
-#sku //in case of conflict users will have to use the modid#sku:objCat:objId
+#uuid //a reference to the mod's uuid
 #objectName
 
 conflicting modids:
-- if both the modid and sku conflicts an asm mod will be created for them both replacing the strings of modid: and modid#sku:
-- to be aware of changing sku's modders should make them configurable
-* warning changing the mod's sku will result in incompatabilities from the mod's sku changing and going into a previous world the items would now not load
-
-SKU: 3,600,000,000 (36^8) possibilities
-A-Z, 0-9 with 8 digits being required
-sku is not a replacement for modid it just becomes modid#sku in case of conflict
-not required for commands unless it's conflicting as the modid's sku can be fetched
+- if both the modid or uuid conflicts an asm mod will be created for them both replacing the strings of modid: and uuid: within their jars
+- modders should be aware that modid may be configurable and inside their mod's code use uuid to get a modid if it's not inside of a config file
+- if a uuid conflict occurs any mods using it will become incompatible and the mod itself and it's deps should change the uuid
+- modders should use JML#getModByUUID(UUID)#modid to get the mod's modid instead of just hard coding it
+- a mod's modid will be configurable under jml's modpack configuration file
 
 when joining world:
-- insecure fast: lists modid#sku and version numbers
-- secure slow: list of md5 mod files and if enabled config file md5s
+- insecure fast: lists uuid and version numbers
+- secure slow: list of md5 and uuid and if enabled config files md5s#is md5 only as it's fast no need to slow down joining process if an md5 attack occurs chances are it won't be a valid jar file and client will crash anyways
 - servers can deny client only mods when joining
 - some servers may require a password to join
 
 on world conversion load:
 checks id mappings and if it doesn't match current registry will give user prompt to go to the main menu or convert now
-conversion will remapp any ids that don't match the current ids in the registry and for non existing ids will convert them to their ModTag with sku. the ModTag will get get converted properly when the mod gets re-added.
+conversion will remapp any ids that don't match the current ids in the registry and for non existing ids will convert them to their ModTag with uuid. the ModTag will get get converted properly when the mod gets re-added.
 ModTag that don't exist for the current mod yet still have the same domain will maintain it's id until it gets replaced in game
 
 Mod Registration Objects Unloading to Save memory:
