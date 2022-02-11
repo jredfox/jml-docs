@@ -3,8 +3,8 @@
 	YAML
 	JSON
 	XML
-	CFG (ModConfig)
-        BCFG(Binary Mod Config file default config)
+	CFG (ModConfig but in text form)
+        MCFG(JML's primary config: Mod Config file)
 	LLIB (Line Library, 3.0+ supports sectioning)
 	TXT (Simple Application Configuration Mapping)
 	NBT
