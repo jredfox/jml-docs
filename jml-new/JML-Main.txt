@@ -77,9 +77,13 @@ inputs:
 - touchscreen with zoom
 - microphone(yes allowing for voice chat mods)
 
-Mobile: adroid / IOS / IPadOS / Fire os port / Console Editions: xbox/playstation/nintendo switch
-- will not support as bedrock edition has already made ports to these edition
-- will not support as each one doesn't have JVM and each different graphics api
+Mobile: adroid / IOS / IPadOS / FireOS / ChromeOS
+- NOTE this is the last thing on my todo list as I would need to add a graphics engine of opengl-es
+- android will be supported which includes support for{anrdoid phones, adroid tablets, FireOs(amazon tabelets), ChromeOs 2019+}.
+- since IOS and IPadOS both run Objective-C and androids support will already have support for opengl-es we will see if I can get support working for it
+
+Console Editions: xbox / playstation / nintendo switch:
+- console editions will not be supported because each one uses a different graphics api therefore isn't truly crossplatform most mods may write opengl and opengl-es but won't write an additional 4 more apis
 
 META-INF.mf:
 ML:JML
