@@ -33,6 +33,7 @@ Fast Mod Loading:
 - direct points to coremods
 - multi threading
 - cached ASM
+- ASM static loading already transformed all classes before launching
 - fat jar for modpack final creation #all mods and libraries in a single jar speeds up loading time!
 
 IDE Features:
