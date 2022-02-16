@@ -12,14 +12,13 @@ Perl //before version 6 will have to directly edit source code in order to modif
 Pascal?
 Fortran?
 
-Portable Assembly Languages:
+Portable Assembly Languages (P-code, Bytecode, Intermediate representation):
 bytecode(java)
 LLVM
 LLVM bytecode
 LLVM bitcode
 .NET bytecode
 p-code
-MASM
 Parrot bytecode (PERL)
 Microsoft P-Code
 Pascal p-code
@@ -27,15 +26,26 @@ OpenCL
 SPIR
 android ART
 android Dalvik
-Assembly language//it's human readable form of machine code per cpu architecture not asm/p-code like languages
 CIL
+C--
 
-#support cpu architecture and rebuilding the os executable program
-cpu machine code supported:
+Assembly itself:
+with all cput architectures that are currently supported
+
+assembly and cpu architectures supported:
 x32
 x64
 arm32
 arm64
+
+Maybe supported:
+swift
+SIL(swift asm)
+xcode
+mysql
+
+usefull compilers:
+graalvm
 
 Not Supported:
 scala
