@@ -1,5 +1,14 @@
 Brand "jredfox gaming"
-API: "bluefire api" //minecraft api which has no actaul game api essentially fabric / original mod loader
-API: "shadowfire api" //minecraft main api which will introduce a system where mc updates to you not the other way around
-API: "bedrocker" //loads mods to minecraft bedrock edition no game api possible support for per version of the game downloading.
-and maybe "hytale-loader"
+API: "mc-vanilla" //portable minecraft to any version equal to the original mod loader / fabric no game api
+API: "shadowfire" //minecraft main api which will introduce a system where mc updates to you not the other way around
+API: "bedrocker" //loads mods to minecraft bedrock edition no game api possible support for per version of the game downloading
+
+possible apis:
+"hytale-vanilla"//portable api no game api code
+"RuneScape-vanilla"
+
+Logos:_____________
+brand logo: a shiny fox behing it is blue fire and the background screen is white
+api-vanilla: shows a block of cake in minecraft
+shadowfire: a grey fire with black background
+bedrocker: either flat 2d grass block like windows 10 edition or a peice of bedrock

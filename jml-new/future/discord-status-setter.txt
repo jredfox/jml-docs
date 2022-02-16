@@ -1,0 +1,1 @@
+ability to set status of discord to a game or modpack, with custom images
