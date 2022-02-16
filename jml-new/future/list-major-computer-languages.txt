@@ -30,7 +30,7 @@ CIL
 C--
 
 Assembly itself:
-with all cput architectures that are currently supported
+with all cpu architectures that are currently supported
 
 assembly and cpu architectures supported:
 x32
