@@ -12,3 +12,4 @@ brand logo: a shiny fox behing it is blue fire and the background screen is whit
 api-vanilla: shows a block of cake in minecraft
 shadowfire: a grey fire with black background
 bedrocker: either flat 2d grass block like windows 10 edition or a peice of bedrock
+JML logo: a purple gear with a fox in front on a white background
