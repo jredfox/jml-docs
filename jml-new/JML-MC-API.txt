@@ -25,7 +25,7 @@ JML-MC-API:
 - custom chunk format
 - custom rendering voxel, obj, ittemrenderer
 - custom system.exit or exit hooks?
-- options are per minecraft version or even per modpack (for modpack mode)
+- options are per minecraft version
 - options are now in a proper mod config file
 - ticking fix
 - te fix
