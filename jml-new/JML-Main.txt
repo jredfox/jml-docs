@@ -20,6 +20,7 @@ ModLoading:
 
 Bytecode Framework:
 - jar mods
+- public -f if enabled by the api
 - access transformers
 - asm
 - class unifyers
@@ -35,6 +36,7 @@ Fast Mod Loading:
 - cached ASM
 - ASM static loading already transformed all classes before launching
 - fat jar for modpack final creation #all mods and libraries in a single jar speeds up loading time!
+- multi thread loading of configuration files
 
 IDE Features:
 - programable per game
