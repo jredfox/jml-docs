@@ -4,8 +4,7 @@ API: "shadowfire" //minecraft main api which will introduce a system where mc up
 API: "bedrocker" //loads mods to minecraft bedrock edition no game api possible support for per version of the game downloading
 
 possible apis:
-"hytale-vanilla"//portable api no game api code
-"RuneScape-vanilla"
+"hytale-vanilla"//portable api no game api coded
 
 Logos:_____________
 brand logo: a shiny fox behing it is blue fire and the background screen is white
