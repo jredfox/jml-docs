@@ -16,6 +16,7 @@ ModLoading:
 - Builtin configurations for mods
 - programable mod loader which binds it to a specified game by an api jar
 - central registry where it can contain billions of indexes without taking up that much ram
+- all game apis will modify the game under a jml/<gameid> for a clean install
 
 Bytecode Framework:
 - jar mods
