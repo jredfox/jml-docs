@@ -16,7 +16,7 @@ Jredfox's Commons
 JPort
 ASM FrameWork
 {
-   Bytecode Proxy for IDE #ASM-Cacheing
+   ASMP Bytecode Proxy for IDE #ASM-Cacheing
    Class Unifyer
    ByteCode Utils
    Access Transformer

@@ -1,1 +1,2 @@
 figure out a proper solution better then mixins
+a higher level api provided to edit class files universal across portable and regular assembly languages
