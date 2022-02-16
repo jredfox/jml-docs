@@ -10,6 +10,28 @@ Ruby
 AngelScript
 Perl
 Pascal?
+Fortran?
+
+Assembly languages supported:
+bytecode(java)
+LLVM
+LLVM bytecode
+LLVM bitcode
+.NET bytecode
+p-code
+MASM
+Parrot bytecode (PERL)
+Microsoft P-Code
+Pascal p-code
+OpenCL
+SPIR
+
+#support cpu architecture and rebuilding the os executable program
+cpu machine code supported:
+x32
+x64
+arm32
+arm64
 
 Not Supported:
 scala
@@ -17,4 +39,9 @@ java script
 PHP
 Delphi
 PL-SOL
+
+cpu architecture not supported:
+x86_x64 (problems with both the amd64 and intel64 versions that seems to have never gotten resolved)
+MIPS
+SPARC
 

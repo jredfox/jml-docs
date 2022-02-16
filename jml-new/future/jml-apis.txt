@@ -1,0 +1,5 @@
+Brand "jredfox gaming"
+API: "bluefire api" //minecraft api which has no actaul game api essentially fabric / original mod loader
+API: "shadowfire api" //minecraft main api which will introduce a system where mc updates to you not the other way around
+API: "bedrocker" //loads mods to minecraft bedrock edition no game api possible support for per version of the game downloading.
+and maybe "hytale-loader"
