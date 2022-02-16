@@ -25,6 +25,7 @@ Creative Tabs:
 Configurations:
 - JML will quickly determine if a configuration change occured by using the lastmodified date on the file
 - JML has ASM and normal configuration events used to load them properly per mod multi threaded
+- JML will skip configs if they have not been modified since last launch
 
 ModTag:
 A-Z,a-z,0-9,_-.
