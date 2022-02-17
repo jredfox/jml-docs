@@ -44,6 +44,7 @@ JML-Devolpement kit
    }
    SetupWorkspace#bytecode proxy, ats, remapping
 }
+Microsoft accounts(get gamertag, uuid, friends lists)
 Picture Codecs
 Audio Codecs
 Jredfox's Sorround Sound

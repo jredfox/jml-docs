@@ -14,7 +14,7 @@ Embedding for ONLY mod authors:
 - this rule is for your jml mod as a mod author as an end user you don't have to worry about any of the above issues.
 - embedding libraries / mods into your mod's jar is frowned upon but there is an acceptible way to do it refractor your dependancies a different path example com.jredfox.silkspawners --> com.jredfox.<your-modid>.silkspawners
 not fallowing this rule will lead to ASM mod and library incompatiblities for the mod/lib it's suppose to support because the classes could load at any time from inside their jar instead of the desired class. 
-- embedding full unmodified distributed mod jars inside of your mod will get your mod taken down and archived if it's uploaded to the JML network for that version or rejected upon upload if not already approved.
+- embedding full unmodified distributed mod jars inside of your mod will get your mod taken down and archived if it's uploaded to the JML network for that version or rejected upon upload if not already approved by EULA or written consent
 there is a proxy and deps systems in place for a reason so you don't have to do this. this results in the same issues as described above to. Simply not acceptible to have mods in mods in mods even if it didn't cause asm / class colisions
 
 Archiving:
