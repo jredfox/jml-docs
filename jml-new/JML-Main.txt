@@ -65,6 +65,10 @@ Versional Mods:
 - versional mods asm & event handling will only handled by the latest version and previous versions will only fire if allowed to by the highest version
 - versional mods objects will have a registry mapping of all previous versions of the versional mod in which that object was duplicated by. for example 1.7 stone block is the same as 1.6 stone block
 
+Proxies:
+- provide proxies that only load when x dep is loaded supporting soft jar deps without reflection
+examples of this include libraries and mods
+
 graphics apis:
 - interchangeable graphics apis but the api will only support by default opengl
 - mods that don't support the current graphics api will cause a crash example: tries to use opengl code when directx is running
