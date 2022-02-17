@@ -1,0 +1,2 @@
+Then we got the silkspawners problem where say BlockBreakEvent has done it's function and dropped a spawner. Now it can't let the mod continue into harvest drops event because some mods will manually spawn xp. So the event gets canceled. But if the event get's canceled it creates incompatibilities with mods wanting to override silkspawners or fire in harvest drops event.
+This is just one example of many. If you cancel an event how do you stop making other mods incompatible? the event priority won't save you always
