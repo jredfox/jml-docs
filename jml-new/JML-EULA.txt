@@ -18,7 +18,7 @@ this is to prevent jar in jar essentially creating incompatiablities with both A
 Archiving:
 - mods will be archived on either upload or takedown unless the mod contains malware viruses etc... this is an agreement upon by the mod author by uploading JML content to the internet
 - archived mods will be able to be downloaded including archived projects by game version, mod version, and then md5-sha1 in case there are duplicate mod versions
-- the only exception is a legal act on DCMA takedown on copyright infringement where the mod author had no legal write to upload the mod in the first place due to 3d party copywrite
+- the only exception is a legal act on DCMA takedown on copyright infringement where the mod author had no legal right to upload the mod in the first place due to 3d party copywrite
 
 this EULA is to make sure users can use mods to their hearts content without worry about copy right infringement, remaining safe, and being happy
 
