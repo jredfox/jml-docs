@@ -9,7 +9,7 @@ at - make public, generate _AT public invocation
 bytecode proxy(show all asm final results in dirtyclasses.jar)
 
 rules:
-use modular asm(no dynamic patching, dynamic classes, pure bytecode edits when there is an modular asm api to prevent massive lag to class loading)
+use modular asm(no dynamic patching, dynamic classes, pure bytecode edits when there is an modular asm api to prevent massive incompatabilities)
 modular asm has priorties(first, least, normal, greatest, last)
 generally ordering of asm should be: overwrites, edits, injections
 please don't overwrite anything. If it's to fix behavior report it as a bug, if it's to change behavior please do it in a way where it's an injection as two overwrites will cause yours / others to no longer work
@@ -17,3 +17,15 @@ jar mods will conflict if two jar mods edit the same class
 jar patch will conflict if two transformers edit the same method
 modular asm will conflict if two transformers edit the same method
 runtime will determine if the conflicts are incompatible with each other
+
+asm rules:
+- editing the value / line gets defined initially by a target and each edit replaces each other edit. you are able to fetch the current value before replacing it though
+- injections will have targets and if not found will be at the end of the method or the closest thing to it rather then just crashing
+- we enocurage people to generally use ModEvents injection calls instead of normal injections for optimal compatiablity
+- modevents will optimially be compiled into the class's that call them
+
+@Event(Name="dropTE", Desc={World.class, String.class, int.class})
+public func_(TileEntity te, BlockPos pos)
+{
+    doMyCode(te, pos);
+}
