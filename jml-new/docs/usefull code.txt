@@ -8,3 +8,4 @@ wmic process where name="ProcessName" CALL setpriority "PriorityLevelName"
 renice [  -n Increment ] [  -g |  -p |  -u ] ID ...
 https://addons-ecs.forgesvc.net/api/v2/addon/{addonID}/file/{fileID}/download-url
 https://api.modrinth.com/api/v1/mod/<modname>/version
+MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
