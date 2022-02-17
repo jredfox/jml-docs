@@ -20,6 +20,7 @@ runtime will determine if the conflicts are incompatible with each other
 
 asm rules:
 - editing the value / line gets defined initially by a target and each edit replaces each other edit. you are able to fetch the current value before replacing it though
+- allow removing lines but isn't recommended
 - injections will have targets and if not found will be at the end of the method or the closest thing to it rather then just crashing
 - try to use ModEvents injection calls instead of normal injections for optimal compatability
 - modevents will be not dependant upon the class in case an event needs execute another event

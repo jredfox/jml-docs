@@ -6,6 +6,7 @@ Shortcuts
 Jredfox Lib & Dependancies
 {
     https://addons-ecs.forgesvc.net/api/v2/addon/{addonID}/file/{fileID}/download-url
+    https://api.modrinth.com/api/v1/mod/<modname>/version
     Direct URL
     Indirect URL if type specified supports it:{curseforge, maybe my website}
     Supports Maven and Semantic Versioning
