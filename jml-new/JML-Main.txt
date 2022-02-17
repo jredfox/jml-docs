@@ -38,6 +38,15 @@ Fast Mod Loading:
 - fat jar for modpack final creation #all mods and libraries in a single jar speeds up loading time!
 - multi thread loading of configuration files
 
+Event Handling:
+- similar to forges
+#EventCancelation#Functionality //disables functionality of the event's method but doesn't stop the event handler
+#EventCancelation#Event //disables the functionality of the event handler but not the functionality note eventhandlers that recieve canceled will still function
+#cancel(EventCancelation type, boolean true / false)
+#returnResult(Object obj) if a single return value is specified
+#cancelable
+@Event func_(EventObject event) or @Event("func_, params = {Object.class, int.class})
+
 IDE Features:
 - programable per game
 - loader contains 0 game code
