@@ -12,7 +12,7 @@ You hearby agree to the fallowing terms in order to use this modloader it's fram
 
 Embedding:
 - embedding libs inside of jars is ok as long as it's not against their EULA but is frowned upon try using the deps library it will cause many issues if another mod tries to use the same library
-- embedding another person's mod jar inside of your mod jar is frowned upon and if on the jml network files will get rejected on upload and archived if reported.
+- embedding another person's mod even jar in jar inside of your mod is frowned upon and if on the jml network files will get rejected on upload and archived if reported.
 this is to prevent jar in jar essentially creating incompatiablities with both ASM and the mod it's suppose to support because the classes could load at any time from inside their jar instead of the desired class. 
 
 Archiving:
