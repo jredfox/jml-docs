@@ -19,6 +19,7 @@ ModLoading:
 - all game apis will modify the game under a jml/<gameid> for a clean install
 
 Bytecode Framework:
+- embedded rafactored libraries example com.jredfox.silkspawners --> com.jredfox.<your-modid>.silkspawners or even version specified
 - jar mods
 - public -f if enabled by the api
 - access transformers

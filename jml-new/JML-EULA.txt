@@ -10,10 +10,12 @@ You hearby agree to the fallowing terms in order to use this modloader it's fram
 - mods are to be free to use and all of content including libraries, this also means no in-game purchases
 - for forks / ports of mods on the JML website to point out this mod is a fork / port of another mod unless +60% of the codebase has been re-written
 
-Embedding:
-- embedding libs inside of jars is ok as long as it's not against their EULA but is frowned upon try using the deps library it will cause many issues if another mod tries to use the same library
-- embedding another person's mod even jar in jar inside of your mod is frowned upon and if on the jml network files will get rejected on upload and archived if reported. Exceptions to this rule exlcude mod libraries / api
-this is to prevent jar in jar essentially creating incompatiablities with both ASM and the mod it's suppose to support because the classes could load at any time from inside their jar instead of the desired class. 
+Embedding for ONLY mod authors:
+- this rule is for your jml mod as a mod author as an end user you don't have to worry about any of the above issues.
+- embedding libraries / mods into your mod's jar is frowned upon but there is an acceptible way to do it refractor your dependancies a different path example com.jredfox.silkspawners --> com.jredfox.<your-modid>.silkspawners
+not fallowing this rule will lead to ASM mod and library incompatiblities for the mod/lib it's suppose to support because the classes could load at any time from inside their jar instead of the desired class. 
+- embedding full unmodified distributed mod jars inside of your mod will get your mod taken down and archived if it's uploaded to the JML network for that version or rejected upon upload if not already approved.
+there is a proxy and deps systems in place for a reason so you don't have to do this. this results in the same issues as described above to. Simply not acceptible to have mods in mods in mods even if it didn't cause asm / class colisions
 
 Archiving:
 - mods will be archived on either upload or takedown unless the mod contains malware viruses etc... this is an agreement upon by the mod author by uploading JML content to the internet
