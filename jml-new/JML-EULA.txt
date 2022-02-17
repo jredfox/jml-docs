@@ -8,6 +8,17 @@ You hearby agree to the fallowing terms in order to use this modloader it's fram
 - no stealing personal data such as but not limited to: credit card information, physical addresses, passwords, account information
 - no using this mod loader to load mods on games that do not allow modding
 - mods are to be free to use and all of content including libraries, this also means no in-game purchases
+- for forks / ports of mods on the JML website to point out this mod is a fork / port of another mod unless +60% of the codebase has been re-written
+
+Embedding:
+- embedding libs inside of jars is ok as long as it's not against their EULA but is frowned upon try using the deps library it will cause many issues if another mod tries to use the same library
+- embedding another person's mod jar inside of your mod jar is frowned upon and if on the jml network files will get rejected on upload and archived if reported.
+this is to prevent jar in jar essentially creating incompatiablities with both ASM and the mod it's suppose to support because the classes could load at any time from inside their jar instead of the desired class. 
+
+Archiving:
+- mods will be archived on either upload or takedown unless the mod contains malware viruses etc... this is an agreement upon by the mod author by uploading JML content to the internet
+- archived mods will be able to be downloaded including archived projects by game version, mod version, and then md5-sha1 in case there are duplicate mod versions
+- the only exception is a legal act on DCMA takedown on copyright infringement where the mod author had no legal write to upload the mod in the first place due to 3d party copywrite
 
 this EULA is to make sure users can use mods to their hearts content without worry about copy right infringement, remaining safe, and being happy
 
