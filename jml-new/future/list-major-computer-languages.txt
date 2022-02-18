@@ -33,7 +33,7 @@ Assembly itself:
 with all cpu architectures that are currently supported
 
 assembly and cpu architectures supported:
-x32
+x86
 x64
 arm32
 arm64

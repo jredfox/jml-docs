@@ -41,11 +41,9 @@ Fields:
 #objectName
 
 conflicting modids:
-- if both the modid or uuid conflicts an asm mod will be created for them both replacing the strings of modid: and uuid: within their jars
-- modders should be aware that modid may be configurable and inside their mod's code use uuid to get a modid if it's not inside of a config file
-- if a uuid conflict occurs any mods using it will become incompatible and the mod itself and it's deps should change the uuid
+- when two modid conflicts it will assign them automatically modid#0000 - modid#9999
+- if the uuid conflicts an asm mod will be created for it replacing the uuid strings for that jar. note anything depending upon it will result in an incompatability
 - modders should use JML#getModByUUID(UUID)#modid to get the mod's modid instead of just hard coding it
-- a mod's modid will be configurable under jml's modpack configuration file
 
 when joining world:
 - insecure fast: lists uuid and version numbers
