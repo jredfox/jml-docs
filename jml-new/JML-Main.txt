@@ -88,6 +88,7 @@ sound engine changeable per device:
 - DTS:X(7.1)
 - Adobe(5.1 is what I heard)
 - lwjgl 3d sound
+- lwjgl input fix for (changing input sounds)
 
 inputs:
 - xbox controller
