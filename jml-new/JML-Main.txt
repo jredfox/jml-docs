@@ -38,6 +38,7 @@ Fast Mod Loading:
 - ASM static loading already transformed all classes before launching
 - fat jar for modpack final creation #all mods and libraries in a single jar speeds up loading time!
 - multi thread loading of configuration files
+- the remapped jar will provide names in 6 characters or less which will increase runtime speeds for obfuscated enviroment
 
 Event Handling:
 - similar to forges
@@ -68,7 +69,7 @@ modpacks:
 - can compile into a fatjar.jar with two modes precomputed asm and re-built every time an asm change occurs or having the transforms in dirtyclasses.jar still. in both modes there will be a resources.jar to. either way it will cut down load and execution time
 - fatjar can be compiled into a native fatjar. the ASM will all be precomputed into the jar before compilation the resources will be seperated. Final resutls: fatjar.exe, fatjar.pkg, fatjar.app etc... with x32, x64, arm64 depnding upon os and machine cpu architecture
 - native fatjars and fatjar.jar with precomputed asm will have to be recompiled if an ASM change occurs
-- fatjars will also have the option to obfuscate per modid/libid for fastest execution time(won't be recomended if users have a good chance of having bugs / crashes in their modpacks)
+- reobfuscation for fastest runtime enviroment while support both fatjar.jar and native fatjar(only downside is end users would have to provide both the mapping log files and mods when reporting bugs)
 
 Versional Mods:
 - mods objects will be registered unless it's a duplicate from a previous version
