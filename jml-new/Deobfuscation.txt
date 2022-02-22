@@ -1,2 +1,18 @@
-Ability to make deobfscation easier
-Re-Mapper for jars a,b,c > specified mapping
+#main mappings
+type, simple name, obfuscated name, intermediate name, anyOtherDefinitions....
+class, net/mc/block/Block, bk, d/c0000
+field, net/mc/block/Block/hardness, bk/a, f0001
+param, net/mc/block/Block/setHardness(I), bk/f(I), p004
+
+#local variable mappings
+method, index offset, classType, simpleName, name
+net/mc/Block/Block/setHardness(I), 1, Z, isWithinRange, var0
+
+c0000
+f0000
+p0000
+c=class
+f=field
+p=param
+where the numbers range from 0-z-Z having 62 posibilities per charater that's 62^4 and can go up more if needed
+class max value = cZZZZ class min value = c0000 an example: c000A > c000a
