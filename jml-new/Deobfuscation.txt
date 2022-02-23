@@ -5,9 +5,13 @@ field, net/mc/block/Block/hardness, bk/a, f0001
 param, net/mc/block/Block/setHardness(I), bk/f(I), p004
 
 #local variable mappings
-method, index offset, classType, simpleName, name
-net/mc/Block/Block/setHardness(I), 1, Z, isWithinRange, var0
+method, index, classType, simpleName, obfuscated name
+net/mc/Block/Block/setHardness(I), 0, Z;isWithinRange, Z;var0
 
+rules local variables:
+- looks at index first compares names if not look like the same variable it trys to find the name
+
+rules mappings:
 c0000
 f0000
 p0000
@@ -16,3 +20,5 @@ f=field
 p=param
 where the numbers range from 0-z-Z having 62 posibilities per charater that's 62^4 and can go up more if needed
 class max value = cZZZZ class min value = c0000 an example: c000A > c000a
+truncate local var from var0 to v0 d0uble0 to d0 as examples
+classes are not in the default package to prevent acess errors
