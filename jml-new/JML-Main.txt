@@ -39,6 +39,7 @@ Fast Mod Loading:
 - fat jar for modpack final creation #all mods and libraries in a single jar speeds up loading time!
 - multi thread loading of configuration files
 - the remapped jar will provide names in 6 characters or less which will increase runtime speeds for obfuscated enviroment
+- hardware acceleration using opencl from lwjgl(possible use of computing stuff on the gpu whenever possible)
 
 Event Handling:
 - similar to forges
