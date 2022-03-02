@@ -98,6 +98,12 @@ Minecraft Level Of Detail and Graphical Chunks:
 - virtual chunks entities boolean
 - virtual chunks te entities boolean
 
+Texture filtering:
+- Antialiasing
+- Anisotropic filtering
+- Mip map
+- Generic Level of detail
+
 Major bug fixes:
 - uuid bugs
 - menu framerate
