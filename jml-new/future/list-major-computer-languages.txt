@@ -33,10 +33,12 @@ Assembly itself:
 with all cpu architectures that are currently supported
 
 assembly and cpu architectures supported:
-x86
-x64
-arm32
-arm64
+x86(windows xp - windows 10, linux)
+x64(windows xp+, android, linux)
+arm32(android, linux)
+arm64(windows 11, android, linux)
+Zen 2(AMD, xbox one x, ps5, windows 10+)
+#theory; convert them into bytecode or something similar and then compile them back when done
 
 Maybe supported:
 swift
@@ -56,6 +58,12 @@ PL-SOL
 
 cpu architecture not supported:
 x86_x64 (problems with both the amd64 and intel64 versions that seems to have never gotten resolved)
+
+supported if help arrives:
 MIPS
 SPARC
+Power ISA
+IA-32(servers)
+IA-64(servers)
+xeon processors architecture(https://en.wikipedia.org/wiki/List_of_Intel_CPU_microarchitectures)
 
