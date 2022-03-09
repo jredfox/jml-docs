@@ -40,6 +40,8 @@ Fast Mod Loading:
 - multi thread loading of configuration files
 - the remapped jar will provide names in 6 characters or less which will increase runtime speeds for obfuscated enviroment
 - hardware acceleration using opencl from lwjgl(possible use of computing stuff on the gpu whenever possible)
+- threaded tranquility library cpu thread high power performance
+- uses mojang's tricks intel for perforamnce for ONLY minecraft apis
 
 Event Handling:
 - similar to forges
@@ -98,6 +100,12 @@ inputs:
 - ps5 controller
 - touchscreen with zoom
 - microphone(yes allowing for voice chat mods)
+
+Threaded Tranquility:
+- dynamically determines amount of java threads from physcial cpu cores and threads
+- multi thread class loader / unloader in batches
+- threads are damien if nessary, prioritized on (high or realtime)
+- ability to change power plan on windows for higher performance
 
 Mobile: adroid / IOS / IPadOS / FireOS / ChromeOS
 - NOTE this is the last thing on my todo list as I would need to add a graphics engine of opengl-es
