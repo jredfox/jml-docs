@@ -106,6 +106,8 @@ Threaded Tranquility:
 - multi thread class loader / unloader in batches
 - threads are damien if nessary, prioritized on (high or realtime)
 - ability to change power plan on windows for higher performance
+- make sure it works with apus, 
+- problems occur with threaded Concurrency instead of Parallelism due to the fact of more threads are used then cpu threads are avalible the benifet of them would be to finish small tasks faster to either get more tasks done sooner or provide Parallelism again
 
 Mobile: adroid / IOS / IPadOS / FireOS / ChromeOS
 - NOTE this is the last thing on my todo list as I would need to add a graphics engine of opengl-es
