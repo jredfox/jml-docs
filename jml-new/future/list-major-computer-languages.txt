@@ -29,16 +29,22 @@ android Dalvik
 CIL
 C--
 
-Assembly itself:
-with all cpu architectures that are currently supported
-
 assembly and cpu architectures supported:
 x86(windows xp - windows 10, linux)
 x64(windows xp+, android, linux)
 arm32(android, linux)
 arm64(windows 11, android, linux)
+Zen
+Zen+
 Zen 2(AMD, xbox one x, ps5, windows 10+)
+Zen 3
 #theory; convert them into bytecode or something similar and then compile them back when done
+
+jredfox's native image & cpu dissembler:
+- dissassemble all supported cpu architectures
+- support dissassembling native os images and formats
+- decompiles to c++ or c# possible as an option
+- recompiles to same or different architecture when avalible without the need to use c++ or c#
 
 Maybe supported:
 swift
@@ -58,6 +64,7 @@ PL-SOL
 
 cpu architecture not supported:
 x86_x64 (problems with both the amd64 and intel64 versions that seems to have never gotten resolved)
+Intel64
 
 supported if help arrives:
 MIPS
