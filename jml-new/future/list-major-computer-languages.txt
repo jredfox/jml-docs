@@ -29,7 +29,7 @@ android Dalvik
 CIL
 C--
 
-assembly and instruction set architectures supported:
+assembly and ISA(instruction set architectures) supported:
 x86(windows xp - windows 10, linux)
 x64(windows xp+, android, linux)
 arm32(android, linux)
