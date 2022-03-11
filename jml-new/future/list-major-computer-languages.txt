@@ -2,6 +2,7 @@ Possible for JML to possibly port to:
 java
 python
 kotlin
+scala
 C++
 C#
 C
