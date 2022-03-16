@@ -1,0 +1,20 @@
+Dynamically determines amount of parrell threads
+Concurrent multi threading for networking or things that require I/O wait time
+concurrent multi threads can only have a certain number of threads depending on their average IPS
+Set threads afinity of main threads(parallelism) automatically
+Set threads priority of main threads
+Set the task of the process(per os) to high highest or realtime
+Changes powerplan for max performance
+uses mojang's trick's intel for performance for minecraft apis
+
+hardware capabilities:
+- compute IPS(instructions per second) average per cpu thread
+
+uses for concurrent multithreading:
+- for tasks that have a waiting period that don't max out the IPS
+- for loading smaller tasks first like graphical loading(in mc chunk loading)
+- for restricting what can execute when and enabling / disabling the thread
+
+uses for parallelism:
+- compute tasks simulationusly
+- faster loading time due multiple tasks at the same time
