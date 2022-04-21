@@ -88,3 +88,8 @@ ints, arrays, and resource location copies o my!:
 - what will use the cache?: chunks, maybe blockpos, registry and massive amounts of repetitive number calling whenever I see it
 - tell modders to only store what they need in memory during registration and dump any arrays that were used to create them afterwards
 - why?: this will take the same data in order to retrieve the primitive objects but use a cache imediatly afterwords of it fetching therefore 100k calls of a single integer of dirt with id of 1 will be one memory location only the index will take up memory
+
+From libs:
+look into foamfix's jarDiscovererMemoryLeakFix
+launch class loader unoptimizations
+anything from evil notch lib or other libs
