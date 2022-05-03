@@ -10,3 +10,26 @@ https://addons-ecs.forgesvc.net/api/v2/addon/{addonID}/file/{fileID}/download-ur
 https://api.modrinth.com/api/v1/mod/<modname>/version
 MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
 https://stackoverflow.com/a/3971771 #allows for reloading classes that are not found in the java.* packages usefull for transforming an already loaded class that loaded by accident
+URL#setURLStreamHandlerFactory #it requires it to be null when setting so a javaagent is required to change this beahvior via a re-transform or reflection if possible post JRE 8+
+
+
+java agents:
+	public static void premain(String args, Instrumentation inst) 
+	{
+		System.out.println("BetaCraft's URL Transformer BOOTING UP ;)");
+		inst.addTransformer(new Transformer(), true);//this is true to recieve the re-transforming of the class
+		try 
+		{
+			inst.retransformClasses(URL.class);
+		}
+		catch (Throwable e) 
+		{
+			e.printStackTrace();
+		}
+	}
+
+MANIFEST.MF
+Agent-Class: jredfox.main.BugFixAgent
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
+Premain-Class: jredfox.main.BugFixAgent
