@@ -9,3 +9,4 @@ renice [  -n Increment ] [  -g |  -p |  -u ] ID ...
 https://addons-ecs.forgesvc.net/api/v2/addon/{addonID}/file/{fileID}/download-url
 https://api.modrinth.com/api/v1/mod/<modname>/version
 MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+https://stackoverflow.com/a/3971771 #allows for reloading classes that are not found in the java.* packages usefull for transforming an already loaded class that loaded by accident
