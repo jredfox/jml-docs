@@ -1,9 +1,10 @@
 Issues:
-- data structures do not support custom comparatores
+- data structures do not support custom comparators like TreeMap
 - data structures do not support more then integer max value (create them?)
-- File api returns null for getParent(), getParentFile() for realtive paths instead of new File("")
+- File api returns null for getParent(), getParentFile() for realtive paths instead of the abosulte path's parent
 - File doesn't contain visable function (should be usable for all desktops linux, macOs, windows)
 - File renameTo doesn't work anymore
+- File api doesn't have the same metadata as per os properties that path's currently has access to
 - ZipApi is trash
 - shutdown hooks not working in command prompt terminals
 - no standard libraries unlike c++ and python
@@ -11,7 +12,21 @@ Issues:
 - no control for read / write / execute on windows and mac/linux and possibly android
 - exiting doesn't fire from native terminals
 - JFrame graphics
-- HTTP errors are not properly handled. 404 is treated as FileNotFoundException and generic errors are generic IOExceptions make a new api wrapper that throws the proper errors
-- no runnable.jar for the directory
+- HTTP / HTTPS errors are not properly handled. 404 is treated as FileNotFoundException and generic errors are generic IOExceptions make a new api wrapper that throws the proper errors
+- no process.jar for the directory that will tell you what the program's main jar or file is being executed from
 - java user.dir doesn't update for File#getAbsolutePath and Paths#getAbsolutePath after updating it even though it's a simple string
 - FTP doesn't support any error codes
+- no process.pid system property
+- process builders do not have access to pids or getting other processes from a pid (pids are used on all unix systems including android)
+- URL's stream factory can only be set once and there doesn't appear to be a getter either
+- URL, File, Path, URI all do not have offline proxy redirects capabilities for a language that was born on the web this is a total shocker. URL is possible but painfully with reflection
+- System.out System.err setting doesn't always really work allowing piping in and out to not always work when this fails
+- JRE 9+ dropped support for reflection unless the modules allow it. overriding this requires an asm of all packages including java.* packages and editing all modules to allow for reflection apis
+- Java doesn't allow class's to be reloaded if they are from the java.* package class loader and native enforced. to fix this requires an editing of an openjdk natives to prevent violating the EULA
+
+Language itself issues won't fix:
+- unable to execute jar without java installed
+- jar's meta-inf doesn't specify min or max java version or * for any
+- jar's meta-inf doesn't specify what prefered jre with or without url to use if avaliable for example reflection library would prefer to run in java 8 because 9 dropped support
+- class re-transforms / re-define via java agent won't allow for more then minor edits. no: changing changing modifyers, no addin/removing fields or methods, no loading new classes that were not already imported. essentially you can do nothing
+- instead of patching the old apis as bugs or to just plain improve the design per major build they instead just drop a new api and leave the old one broken. this isn't ok I could understand leaving bad design methods left as a proxy if its not too bad but not fixing easily fixable bugs or just adding to the api no they just re-write the class and come up with a worse design
