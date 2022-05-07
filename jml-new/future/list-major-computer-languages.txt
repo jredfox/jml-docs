@@ -59,7 +59,7 @@ jredfox's native image & cpu dissembler:
 Maybe supported:
 swift
 SIL(swift asm)
-xcode
+xcode #Objective-C is included with xcode
 mysql
 
 usefull compilers:
