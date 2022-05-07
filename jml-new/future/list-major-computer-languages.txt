@@ -19,6 +19,7 @@ LLVM
 LLVM bytecode
 LLVM bitcode
 .NET bytecode
+pyc bytecode
 p-code
 Parrot bytecode (PERL)
 Microsoft P-Code
@@ -31,14 +32,14 @@ CIL
 C--
 
 assembly and ISA(instruction set architectures) supported:
-x86(windows xp - windows 10, linux)
-x64(windows xp+, android, linux)
+x86(windows xp - windows 10, linux, mac)
+x64(windows xp+, android, linux, mac)
 arm32(android, linux)
-arm64(windows 11, android, linux)
-x86_x64(AMD64)
-Intel64
+arm64(windows 11, android, linux, mac)
 
 supported if help arrives:
+AMD64 (windows, linux) #x86_x64 capeable of running both x86 and x64 without emulation but if compiled directly into amd64 there are additional instructions
+Intel64 #same as amd64 but intel's impl behaves differently
 IA-32(servers & xeon)
 IA-64(servers & xeon)
 MIPS(32 and 64)
@@ -65,7 +66,6 @@ usefull compilers:
 graalvm
 
 Not Supported:
-scala
 java script
 PHP
 Delphi
