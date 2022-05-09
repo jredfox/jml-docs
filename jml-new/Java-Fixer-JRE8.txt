@@ -2,8 +2,8 @@ Issues:
 - data structures do not support custom comparators like TreeMap
 - data structures do not support more then integer max value (create them?)
 - File api returns null for getParent(), getParentFile() for realtive paths instead of the abosulte path's parent
-- File doesn't contain visable function (should be usable for all desktops linux, macOs, windows)
 - File renameTo doesn't work anymore
+- File doesn't contain visable function (should be usable for all desktops linux, macOs, windows)
 - File api doesn't have the same metadata as per os properties that path's currently has access to
 - ZipApi is trash
 - shutdown hooks not working in command prompt terminals
@@ -16,7 +16,7 @@ Issues:
 - no process.jar for the directory that will tell you what the program's main jar or file is being executed from
 - java user.dir doesn't update for File#getAbsolutePath and Paths#getAbsolutePath after updating it even though it's a simple string
 - FTP doesn't support any error codes
-- no process.pid system property
+- no process.pid system info
 - process builders do not have access to pids or getting other processes from a pid (pids are used on all unix systems including android)
 - URL's stream factory can only be set once and there doesn't appear to be a getter either
 - URL, File, Path, URI all do not have offline proxy redirects capabilities for a language that was born on the web this is a total shocker. URL is possible but painfully with reflection
@@ -25,8 +25,17 @@ Issues:
 - Java doesn't allow class's to be reloaded if they are from the java.* package class loader and native enforced. to fix this requires an editing of an openjdk natives to prevent violating the EULA
 
 Language itself issues won't fix:
-- unable to execute jar without java installed
+- unable to execute jar without java installed. it should at least have something for the os to lookup and download
 - jar's meta-inf doesn't specify min or max java version or * for any
 - jar's meta-inf doesn't specify what prefered jre with or without url to use if avaliable for example reflection library would prefer to run in java 8 because 9 dropped support
 - class re-transforms / re-define via java agent won't allow for more then minor edits. no: changing changing modifyers, no addin/removing fields or methods, no loading new classes that were not already imported. essentially you can do nothing
 - instead of patching the old apis as bugs or to just plain improve the design per major build they instead just drop a new api and leave the old one broken. this isn't ok I could understand leaving bad design methods left as a proxy if its not too bad but not fixing easily fixable bugs or just adding to the api no they just re-write the class and come up with a worse design
+- unable to patch JRE8 fully if the vendor is oracle and not openjdk due to their Terms of Service
+- there is direct DL for oracle java versions without manually going to their website and clicking install.
+
+work arounds:
+- to prevent TOS violation the file issues will get resolved via a dynamic transformer that will use the new File / Path api if the vendor is orcale if not it will just patch the actual class. this is because even using a javaagent it's impossible to add methods/fields and transforming it isn't an option since it's already loaded
+- to prevent TOS Violation the URL issues when the java vendor is oracle won't get edited it will use a custom URLStreamHandler factory
+- to prevent TOS Violation the patches for JNI natives that allows for class re-loading of the java.* packages won't exist when the vendor is orcale and not openjdk
+- to prevent TOS Violation cached ASM files of java.* packages are stored in a seperate jar for the boot loader and won't load when the vendor is oracle
+- conclusion oracle has bad TOS. they should allow ASM at the very least and class re-loading / class re-directs with an argument. but instead they plain out do not allow it even with all the issues stated above
