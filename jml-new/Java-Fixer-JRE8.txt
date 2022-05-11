@@ -18,6 +18,7 @@ Issues:
 - FTP doesn't support any error codes
 - no process.pid system info
 - process builders do not have access to pids or getting other processes from a pid (pids are used on all unix systems including android)
+- no jvm argument to enforce same JRE(java runtime enviorment) when running commands via process builders. Work around -Djava.sameJRE would need to get added. may be possible with javaagent otherwise needs openjdk
 - URL's stream factory can only be set once and there doesn't appear to be a getter either
 - URL, File, Path, URI all do not have offline proxy redirects capabilities for a language that was born on the web this is a total shocker. URL is possible but painfully with reflection
 - System.out System.err setting doesn't always really work allowing piping in and out to not always work when this fails
