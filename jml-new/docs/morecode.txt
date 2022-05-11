@@ -1,0 +1,12 @@
+-XBoot
+javaw
+javaws
+exec java -Xdock:name="BetaCraft Launcher" -Xdock:icon="$DIR/../Resources/icon.icns" -cp ".;$DIR;" -jar "$DIR/BetaCraft-Launcher-Java.jar"
+sodium mods look at
+batch rendering
+pixel format depths 24 and stencil 8 bit. dynamically determine this figure out a way
+smooth boot mod(thread priorities infities and processing priorities)
+power plan max performance
+resource leaks jar
+log4jExploitFix #enforce log4j exploit is not possible enforcing the minimum version be x
+jarDiscovererMemoryLeakFix=true #check how foamfix did this
