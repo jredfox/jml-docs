@@ -1,0 +1,18 @@
+version:1.6.4
+subversion:0.0.1
+
+biomes
+weather, clouds, enviorment, fog, sky, stars
+blocks w textures
+items w textures
+graphics
+lightmap
+lighting algorithm
+entities
+player properties
+main menu
+world properties
+recipes
+world entity spawner (not the block)
+farlands of each biome
+main menu

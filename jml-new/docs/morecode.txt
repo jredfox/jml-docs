@@ -1,4 +1,5 @@
 -XBoot
+java
 javaw
 javaws
 exec java -Xdock:name="BetaCraft Launcher" -Xdock:icon="$DIR/../Resources/icon.icns" -cp ".;$DIR;" -jar "$DIR/BetaCraft-Launcher-Java.jar"
