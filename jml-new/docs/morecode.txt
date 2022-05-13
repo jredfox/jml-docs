@@ -11,3 +11,14 @@ power plan max performance
 resource leaks jar
 log4jExploitFix #enforce log4j exploit is not possible enforcing the minimum version be x
 jarDiscovererMemoryLeakFix=true #check how foamfix did this
+
+chunk ideas:
+integrated server: the client and server share the same byte block arrays if you are the host
+slice chunk format 1x256 x 256. either 1x8 or 1x16 sub chunks. same blocks are a single index and null indexes means air
+slice chunk horizatonal 1x16 x 256 starting from y<=0 single index means same blocks null means air for the world
+memory mapped files for anything over 32 render and are a virtual chunk you can see them but they don't tick
+boolean for int datatype else is short and treated as an unsigned short applied to the entire chunk
+chunks only are tickable if there is a TE and is loaded by a chunk loader entity aka player
+entities only tick if they are in a tickable chunk or are in a certain range of a chunk loader
+player ticks get priority over normal entities to prevent lag
+
