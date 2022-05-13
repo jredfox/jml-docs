@@ -59,6 +59,14 @@ IDE Features:
 - easy high level bytecode manipulation using Class Modification Unifyer (CMU)
 - JML Developement kit (for compiling your mods)
 
+Java application support:
+- java and javaw(normal java applications)
+- java applet wrapper if needed to run applets as normal java applications allowing them to be compatible
+- javafx support will download javafx after java8 and install it with a path
+- custom java installation support in case your game is locked inside a specified java version such as java 8 or java 6.{java8, openjdk8(jredfox vendor), java18, openjdk18(jredfox) and custom installations by either the user or the game api}
+- notes: javaws(java web start) is not going to be supported it simply is a package handler to distribute java apps across the web jml expect you to have them already installed
+java applets embedded into the browser won't be supported A:web browsers dropped support for all java B: it's not required nor desired to run a game in the web browser when using JML. Java applets can be run using normal java means via a wrapper if required
+
 Jar Sigining & Security Checks:
 - for hash checking JML will use md5-sha1 the chances of both hashing algorithms failing are next to none
 - secured mods will be encrypted and the key will be the meta-inf file's md5-sha1

@@ -49,6 +49,3 @@ Microsoft accounts(get gamertag, uuid, friends lists)
 Picture Codecs
 Audio Codecs
 Jredfox's Sorround Sound
-support java applets
-support java web start applications
-support javafx (newest)
