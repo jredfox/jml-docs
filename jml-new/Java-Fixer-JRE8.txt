@@ -1,6 +1,7 @@
 Issues:
 - data structures do not support custom comparators like TreeMap
 - data structures do not support more then integer max value (create them?)
+- data structures are ram hungry pigs that even with null indexes take up 1GB of ram with just Object[276,889,600]
 - File api returns null for getParent(), getParentFile() for realtive paths instead of the abosulte path's parent
 - File renameTo doesn't work anymore
 - File doesn't contain visable function (should be usable for all desktops linux, macOs, windows)
