@@ -11,7 +11,7 @@ https://api.modrinth.com/api/v1/mod/<modname>/version
 MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
 https://stackoverflow.com/a/3971771 #allows for reloading classes that are not found in the java.* packages usefull for transforming an already loaded class that loaded by accident
 URL#setURLStreamHandlerFactory #it requires it to be null when setting so a javaagent is required to change this beahvior via a re-transform or reflection if possible post JRE 8+
--Xverify:none #disables verification of jar checks use this no need I have my own jar check when required
+-Xverify:none or -noverify #disables verification of jar checks use this no need I have my own jar check when required the older one starts with an x
 
 java agents:
 	public static void premain(String args, Instrumentation inst) 
