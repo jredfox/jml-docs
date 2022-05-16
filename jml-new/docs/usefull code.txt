@@ -13,6 +13,7 @@ https://stackoverflow.com/a/3971771 #allows for reloading classes that are not f
 URL#setURLStreamHandlerFactory #it requires it to be null when setting so a javaagent is required to change this beahvior via a re-transform or reflection if possible post JRE 8+
 -noverify #slightly speeds up process as it stops some checks
 -XX:HeapDumpPath=TrickIntelDrivers_javaw.exe_jml.exe.heapdump #same as mojang's but without edit to prevent copyright
+ImageIO.setUseCache(false);
 
 java agents:
 	public static void premain(String args, Instrumentation inst) 
