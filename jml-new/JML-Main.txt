@@ -61,7 +61,7 @@ IDE Features:
 
 Java application support:
 - java and javaw(normal java applications)
-- java applet wrapper if needed to run applets as normal java applications allowing them to be compatible
+- java applet wrapper for old java games that used applet
 - javafx support will download javafx after java8 and install it with a path
 - custom java installation support in case your game is locked inside a specified java version such as java 8 or java 6.{java8, openjdk8(jredfox vendor), java18, openjdk18(jredfox) and custom installations by either the user or the game api}
 - notes: javaws(java web start) is not going to be supported it simply is a package handler to distribute java apps across the web jml expect you to have them already installed
