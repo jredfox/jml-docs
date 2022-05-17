@@ -1,4 +1,4 @@
-  Jredfox Lib & Dependancies
+  Jredfox Lib Loader & Dependancies
   {
     https://addons-ecs.forgesvc.net/api/v2/addon/{addonID}/file/{fileID}/download-url
     https://api.modrinth.com/api/v1/mod/<modname>/version
@@ -8,3 +8,8 @@
     Version has to be specified inside Lib
     Ability for each mod to have a Lib & Deps addon defined under the meta-inf
   }
+
+Lib loader:
+- able to load custom JVM args per jar file with append to or replace invokation
+- able to re-launch a rebootable program with the corrected jvm arguments
+- doesn't open console on re-launch use OpenTerminal launcher for this instead

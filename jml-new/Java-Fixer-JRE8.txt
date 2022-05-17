@@ -26,7 +26,7 @@ Issues:
 - JRE 9+ dropped support for reflection unless the modules allow it. overriding this requires an asm of all packages including java.* packages and editing all modules to allow for reflection apis
 - Java doesn't allow class's to be reloaded if they are from the java.* package class loader and native enforced. to fix this requires an editing of an openjdk natives to prevent violating the EULA
 - no jvm argument to disable the checking of the meta-inf file. the signed jar process isn't that secure anyways and slows down boot time or when a new library is accessed
-- Java no working jvm flag to turn the DPI scaling off resulting in blurry minecraft if it's not from the JRE of microsoft's launcher's java
+- no working jvm flag to turn the DPI scaling off resulting in blurry minecraft if it's not from the JRE of microsoft's launcher's java
 
 Language itself issues won't fix:
 - unable to execute jar without java installed. it should at least have something for the os to lookup and download
