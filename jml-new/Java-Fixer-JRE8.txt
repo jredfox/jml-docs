@@ -11,7 +11,7 @@ Issues:
 - no standard libraries unlike c++ and python
 - Date/Calendar objects are flawed
 - no control for read / write / execute on windows and mac/linux and possibly android
-- exiting doesn't fire from native terminals
+- exiting / closing hooks do not fire with Control + Close, sigint, sigterm from terminal or gui application
 - JFrame graphics
 - HTTP / HTTPS errors are not properly handled. 404 is treated as FileNotFoundException and generic errors are generic IOExceptions make a new api wrapper that throws the proper errors
 - no process.jar for the directory that will tell you what the program's main jar or file is being executed from
