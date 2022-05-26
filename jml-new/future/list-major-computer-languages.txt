@@ -6,6 +6,7 @@ scala
 C++
 C#
 C
+Visual Basic
 Rust
 Ruby
 AngelScript

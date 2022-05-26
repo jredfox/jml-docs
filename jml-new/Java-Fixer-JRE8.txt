@@ -3,9 +3,10 @@ Issues:
 - data structures do not support more then integer max value (create them?)
 - data structures are ram hungry pigs that even with null indexes take up 1GB of ram with just Object[276,889,600]
 - File api returns null for getParent(), getParentFile() for realtive paths instead of the abosulte path's parent
-- File renameTo doesn't work anymore
+- File renameTo doesn't work anymore always
 - File doesn't contain visable function (should be usable for all desktops linux, macOs, windows)
 - File api doesn't have the same metadata as per os properties that path's currently has access to
+- File api doesn't have directory color
 - ZipApi is trash
 - shutdown hooks not working in command prompt terminals
 - no standard libraries unlike c++ and python
