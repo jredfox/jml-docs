@@ -78,7 +78,9 @@ Anti Lag:
 - players can't enter chunks that are not loaded yet
 - level of detail decreases in distance
 - on first launch of jml encourage windows users to use recommended power plan that will max out performance
-- on windows the priority will be high on the program
+- priority of the process will be high on the program
+- using a memory mapped file between the integrated server and the client for faster and more optimized performance (can be disabled if sacrificing 500MB-1GB/s is too much ram)
+- integerated server and client will share the same byte buffers on chunks to cut the memory in half(doesn't allow hacking unless you are the host)
 
 Graphics Fix:
 - anti alaising
