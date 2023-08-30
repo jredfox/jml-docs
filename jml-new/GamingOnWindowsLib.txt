@@ -1,0 +1,6 @@
+Windows Performance Settings FUCK WINDOWS:
+- Settings --> GameMode --> on
+- Settings --> Display --> Graphics --> Hardware-Accelerated GPU Scheduling --> on
+- Settings --> Display --> Graphics --> Perforamnce Preference --> add java / games
+- Custom Power Settings --> High Performance(custom high perforamnce AMD & NVIDIA & Intel dependant)
+- Task Manager --> current process --> priority --> high priority
