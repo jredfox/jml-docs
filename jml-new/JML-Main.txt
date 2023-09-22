@@ -114,7 +114,7 @@ inputs:
 Threaded Tranquility:
 - dynamically determines amount of java threads from physcial cpu cores and threads
 - multi thread class loader / unloader in batches
-- threads are damien if nessary, prioritized on (high or realtime)
+- threads are damien if nessary, prioritized on (high or realtime), GamingOnWindowsLib
 - ability to change power plan on windows for higher performance
 - make sure it works with apus, 
 - problems occur with threaded Concurrency instead of Parallelism due to the fact of more threads are used then cpu threads are avalible the benifet of them would be to finish small tasks faster to either get more tasks done sooner or provide Parallelism again

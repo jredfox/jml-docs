@@ -4,3 +4,5 @@ Windows Performance Settings FUCK WINDOWS:
 - Settings --> Display --> Graphics --> Perforamnce Preference --> add java / games
 - Custom Power Settings --> High Performance(custom high perforamnce AMD & NVIDIA & Intel dependant)
 - Task Manager --> current process --> priority --> high priority
+
+#TODO video settings to perforamnce in both places
