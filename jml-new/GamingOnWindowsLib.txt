@@ -4,5 +4,7 @@ Windows Performance Settings FUCK WINDOWS:
 - Settings --> Display --> Graphics --> Perforamnce Preference --> add java / games
 - Custom Power Settings --> High Performance(custom high perforamnce AMD & NVIDIA & Intel dependant)
 - Task Manager --> current process --> priority --> high priority
+- (optional) Settings --> Security --> Windows Defender --> Disable Realtime Protection and possible all
+- Windows 11 powerplan settings in the settings app
 
 #TODO video settings to perforamnce in both places
