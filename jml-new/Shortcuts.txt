@@ -1,0 +1,20 @@
+Create User Shortcuts:
+- Windows LNK (via vbscript or WinAPI's?)
+- Mac Alias
+- Linux Shortcuts
+
+Hard Links(FILE ONLY):
+- create
+- deleteif where it deletes if pathentries > 1
+- list hard link per file
+
+Create Symbolic Links:
+- Windows SafeMode and not admin Hard link(FILE) or Junction(DIR)
+- Windows Installer/Uninstaller enable/disable symlinks for nonadmin using registry Windows7-11+
+- Mac/linux create like normal
+
+File Systems Supported
+- NTFS
+- EXT1-4
+- HPFS+
+- APFS
