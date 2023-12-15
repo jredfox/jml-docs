@@ -13,6 +13,8 @@ Create Symbolic Links:
 - Windows Installer/Uninstaller enable/disable symlinks for nonadmin using registry Windows7-11+
 - Mac/linux create like normal
 
+Make sure to support external volumes
+
 File Systems Supported
 - NTFS
 - EXT1-4
