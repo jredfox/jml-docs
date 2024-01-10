@@ -9,9 +9,8 @@ Windows Performance Settings FUCK WINDOWS:
 - Settings --> Display --> Graphics --> Perforamnce Preference --> add java / games
 - Custom Power Settings --> High Performance(custom high perforamnce AMD & NVIDIA & Intel dependant)
 - Task Manager --> current process --> priority --> high priority
-- (optional) Settings --> Security --> Windows Defender --> Disable Realtime Protection and possible all
-- Windows 11 powerplan settings in the settings app
 - UnCheck Disable Touchpad while Typing" option in Windows 11
+- Windows 11 powerplan settings in the settings app
 - Disable Sticky Keys
 - Disable Palm Rejection and Disable Disable TouchPad While typing
 
@@ -23,13 +22,26 @@ DONE:
 
 Callable:
 - Change Priority
-- settings --> display --> grapchis --> performance preference --> add / remove (EXE)
+- Change GPU Preference (Add HDR and GPU MODE)
+- Create and apply new GPU power plan supporting AMD, NVIDIA, Intel
 
 Optional:
 - Variable refresh rate
 - AutoHDR
 
-#TODO video settings to perforamnce in both places
 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /v HwSchMode /t REG_DWORD /d 1 /f
+WIP:
+- POWERPLAN commands
+- Finish Grachpics Settings Variable Refresh rate etc....
+- Create GPU Power Plan
+- Palm Rejection
 
+WIP C++ Main LIB
+- No Sticky Keys regardless of settings
+- Add EXE's to GPU perforamnce
+
+#Turns on Energy Saver
+powercfg /setdcvalueindex SCHEME_CURRENT SUB_ENERGYSAVER ESBATTTHRESHOLD 0
+
+#Turn into C++ Program and Compile Statically and make sure it does ActiveOverlayAcPowerScheme and ActiveOverlayDcPowerScheme otherwise it will be callable option to increase performance and GameModeLib's batch would directly edit the registry
+https://github.com/AaronKelley/PowerMode
