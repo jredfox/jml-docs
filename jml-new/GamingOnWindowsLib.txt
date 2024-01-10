@@ -1,10 +1,35 @@
 Windows Performance Settings FUCK WINDOWS:
 - Settings --> GameMode --> on
+- Settings --> Windows HD Color Settings --> STREAM HDR
+- Settings --> Windows HD Color Settings --> HDR
+- Settings --> Windows HD Color Settings --> Optimize for Image Quality
+- Settings --> Video PlayBack --> Uncheck: "I Prefer playing at lower resolution"
+- Settings --> Video PlayBack --> Optimize For Video Quality
 - Settings --> Display --> Graphics --> Hardware-Accelerated GPU Scheduling --> on
 - Settings --> Display --> Graphics --> Perforamnce Preference --> add java / games
 - Custom Power Settings --> High Performance(custom high perforamnce AMD & NVIDIA & Intel dependant)
 - Task Manager --> current process --> priority --> high priority
 - (optional) Settings --> Security --> Windows Defender --> Disable Realtime Protection and possible all
 - Windows 11 powerplan settings in the settings app
+- UnCheck Disable Touchpad while Typing" option in Windows 11
+- Disable Sticky Keys
+- Disable Palm Rejection and Disable Disable TouchPad While typing
+
+DONE:
+- GAMEMODE
+- Hardware-Accelerated GPU Scheduling
+- current process --> priority --> high priority
+- Disable Sticky Keys
+
+Callable:
+- Change Priority
+- settings --> display --> grapchis --> performance preference --> add / remove (EXE)
+
+Optional:
+- Variable refresh rate
+- AutoHDR
 
 #TODO video settings to perforamnce in both places
+
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /v HwSchMode /t REG_DWORD /d 1 /f
+
