@@ -6,42 +6,32 @@ Windows Performance Settings FUCK WINDOWS:
 - Settings --> Video PlayBack --> Uncheck: "I Prefer playing at lower resolution"
 - Settings --> Video PlayBack --> Optimize For Video Quality
 - Settings --> Display --> Graphics --> Hardware-Accelerated GPU Scheduling --> on
+- Settings --> Display --> Graphics --> Variable Refresh Rate
+- Settings --> Display --> Graphics --> AutoHDR
+- Settings --> Display --> Graphics --> Optimize Games
 - Settings --> Display --> Graphics --> Perforamnce Preference --> add java / games
 - Custom Power Settings --> High Performance(custom high perforamnce AMD & NVIDIA & Intel dependant)
 - Task Manager --> current process --> priority --> high priority
-- UnCheck Disable Touchpad while Typing" option in Windows 11
 - Windows 11 powerplan settings in the settings app
 - Disable Sticky Keys
 - Disable Palm Rejection and Disable Disable TouchPad While typing
-
-DONE:
-- GAMEMODE
-- Hardware-Accelerated GPU Scheduling
-- current process --> priority --> high priority
-- Disable Sticky Keys
+- Disable Function Key Lock
 
 Callable:
 - Change Priority
-- Change GPU Preference (Add HDR and GPU MODE)
+- Change EXE GPU Preference (Add HDR and GPU MODE)
 - Create and apply new GPU power plan supporting AMD, NVIDIA, Intel
+- Install / Uninstall setups shell scripts (ADMIN Prompt)
 
-Optional:
+Graphics Optional Settings:
 - Variable refresh rate
 - AutoHDR
-
+- Optimize Windows Apps
 
 WIP:
-- POWERPLAN commands
-- Finish Grachpics Settings Variable Refresh rate etc....
+- Create RegistryGrant.exe which grants or ungrants recursivley registry rights for the administrator (system group ungrant) and changes ownership as well
+- use RegistryGrant.exe to grant registry for HKLM\SYSTEM\CurrentControlSet\Control\Power\User\PowerSchemes and windows defender
+- Have a Script Users can run to statically turn on / off windows defender to increase CPU Usage and also have an option to run to dynamically disable it when a game launches and if browsers are not enabled and disable it once a browser is detected
 - Create GPU Power Plan
-- Palm Rejection
-
-WIP C++ Main LIB
-- No Sticky Keys regardless of settings
-- Add EXE's to GPU perforamnce
-
-#Turns on Energy Saver
-powercfg /setdcvalueindex SCHEME_CURRENT SUB_ENERGYSAVER ESBATTTHRESHOLD 0
-
-#Turn into C++ Program and Compile Statically and make sure it does ActiveOverlayAcPowerScheme and ActiveOverlayDcPowerScheme otherwise it will be callable option to increase performance and GameModeLib's batch would directly edit the registry
-https://github.com/AaronKelley/PowerMode
+- Palm Rejection / Mouse Disable while typing
+- Disable function key lock
