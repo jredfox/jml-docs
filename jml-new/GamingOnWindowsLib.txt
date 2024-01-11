@@ -29,9 +29,9 @@ Graphics Optional Settings:
 - Optimize Windows Apps
 
 WIP:
-- Create RegistryGrant.exe which grants or ungrants recursivley registry rights for the administrator (system group ungrant) and changes ownership as well
-- use RegistryGrant.exe to grant registry for HKLM\SYSTEM\CurrentControlSet\Control\Power\User\PowerSchemes and windows defender
-- Have a Script Users can run to statically turn on / off windows defender to increase CPU Usage and also have an option to run to dynamically disable it when a game launches and if browsers are not enabled and disable it once a browser is detected
+- Create RegistryGrant.exe
+- Use RegistryGrant.exe before applying PowerModeOverlay registry edits
+- WindowsDefender.bat
 - Create GPU Power Plan
 - Palm Rejection / Mouse Disable while typing
 - Disable function key lock
