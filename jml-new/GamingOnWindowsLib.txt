@@ -21,7 +21,7 @@ Callable:
 - Change Priority
 - Change EXE GPU Preference (Add HDR and GPU MODE)
 - Create and apply new GPU power plan supporting AMD, NVIDIA, Intel
-- Install scripts (ADMIN Prompt)
+- Install / Uninstall Scripts
 
 Graphics Optional Settings:
 - Variable refresh rate
@@ -29,10 +29,10 @@ Graphics Optional Settings:
 - Optimize Windows Apps
 
 WIP:
-- PowerPlan GUID Registry edits for NVIDIA, Desktop GPUS
-- Uninstall GPU Entries that were not there before
-- Sticky Keys Re-Enabler
+- BitLock Disabler Script
 - Windows Defender Disabler Make Program Static and Dynamic Requires User Input if Tampering is on in Security
+- PowerPlan Intel Support Registry Changes for Intel HD Graphics Panel
+- PowerPlan GUID Registry edits for NVIDIA, Desktop GPUS
 
 Help Wanted:
 - GPU SubGroup & Setting GUID Database of GPU settings to set to max performance
