@@ -21,7 +21,7 @@ Callable:
 - Change Priority
 - Change EXE GPU Preference (Add HDR and GPU MODE)
 - Create and apply new GPU power plan supporting AMD, NVIDIA, Intel
-- Install / Uninstall setups shell scripts (ADMIN Prompt)
+- Install scripts (ADMIN Prompt)
 
 Graphics Optional Settings:
 - Variable refresh rate
@@ -29,9 +29,13 @@ Graphics Optional Settings:
 - Optimize Windows Apps
 
 WIP:
-- Create RegistryGrant.exe
-- Use RegistryGrant.exe before applying PowerModeOverlay registry edits
-- WindowsDefender.bat
-- Create GPU Power Plan
-- Palm Rejection / Mouse Disable while typing
-- Disable function key lock
+- PowerPlan GUID Registry edits for NVIDIA, Desktop GPUS
+- Uninstall GPU Entries that were not there before
+- Sticky Keys Re-Enabler
+- Windows Defender Disabler Make Program Static and Dynamic Requires User Input if Tampering is on in Security
+
+Help Wanted:
+- GPU SubGroup & Setting GUID Database of GPU settings to set to max performance
+- Palm Rejection
+- Having to Press FN+F<1-12> keys before using them in games probably not being programtically possible if it's not per OEM
+- Unchecking Disable TouchPad while typing from a registry edit
