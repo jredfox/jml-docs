@@ -26,6 +26,11 @@ Callable:
 - Create and apply new GPU power plan supporting AMD, NVIDIA, Intel
 - Install / Uninstall Scripts
 
+WIP TouchPads
+- Check MacOs touchpad windows properly installed drivers
+- Check ASUS TouchPad
+- Check Windows XP DELL TouchPad
+
 WIP:
 - Check ASUS's Touchpad full OEM SHIT APPS
 - Fix Uninstall Algorithms
