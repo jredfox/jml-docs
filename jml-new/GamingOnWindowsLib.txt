@@ -27,9 +27,11 @@ Callable:
 - Install / Uninstall Scripts
 
 WIP:
+- Check ASUS's Touchpad full OEM SHIT APPS
 - Fix Uninstall Algorithms
 - Update Uninstall to have the OEM touchpad settings
 - "cncmd.exe" export %USERPROFILE%\Desktop\Test.zip {HKEY_LOCAL_MACHINE\SOFTWARE\AMD\CN value InstallDir} ELSE {cncmd.exe in C:\Program Files\AMD or last restor C:\Program Files (x86)\AMD}
+- ExternalWIN check to make sure that Junctions always errored if not we always need to call ShortCutFixer.bat && remove all /NORPFIX's????
 - 3d Graphics Settings AMD and NVIDIA, Intel UHD Graphics
 - PowerPlan Registry Edits NVIDIA
 
