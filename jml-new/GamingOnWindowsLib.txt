@@ -21,26 +21,21 @@ Windows Performance Settings FUCK WINDOWS:
 - Windows Defender Full Disabler (Disables Windows Defender Except FireWall On Startup)
 
 Callable:
-- Change Priority
-- Change EXE GPU Preference (Add HDR and GPU MODE)
+- Change Process Priority
+- Change EXE GPU Preference (Windows 10+ Only)
 - Create and apply new GPU power plan supporting AMD, NVIDIA, Intel
 - Install / Uninstall Scripts
 
-WIP TouchPads
-- Check MacOs touchpad windows properly installed drivers
-- Check ASUS TouchPad
-- Check Windows XP DELL TouchPad
-
 WIP:
-- Check ASUS's Touchpad full OEM SHIT APPS
 - Fix Uninstall Algorithms
-- Update Uninstall to have the OEM touchpad settings
+- Compile GameModeLib.exe & DotRegQuery.exe for x86 and ARM64
 - "cncmd.exe" export %USERPROFILE%\Desktop\Test.zip {HKEY_LOCAL_MACHINE\SOFTWARE\AMD\CN value InstallDir} ELSE {cncmd.exe in C:\Program Files\AMD or last restor C:\Program Files (x86)\AMD}
-- ExternalWIN check to make sure that Junctions always errored if not we always need to call ShortCutFixer.bat && remove all /NORPFIX's????
-- 3d Graphics Settings AMD and NVIDIA, Intel UHD Graphics
-- PowerPlan Registry Edits NVIDIA
+- NVIDIA Set Prefered Graphics Processor to High Performance
+- 3d Settings Intel UHD & Intel ARCH Graphics Control Pannel
+- Chec Mac Silicon windows 11 arm GPU settings powerplan
 
 Help Wanted:
-- Palm Rejection
-- Having to Press FN+F<1-12> keys before using them in games probably not being programtically possible if it's not per OEM
+- NVIDIA 3d Graphics Set Preffered GPU to dedicated programtically globally
+- Palm Rejection, Palm Check, SmartSense
 - Unchecking Disable TouchPad while typing from a registry edit
+- Having to Press FN+F<1-12> keys before using them in games probably not being programtically possible if it's not per OEM
