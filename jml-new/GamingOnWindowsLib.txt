@@ -27,8 +27,9 @@ Callable:
 - Install / Uninstall Scripts
 
 WIP:
-- Fix Tamper Protection checks for versions that don't have it such as legacy windows 10 or windows 7-8.1
 - Make EnableFSO.reg
+- Xbox GameBar New Notifications
+- Fix Tamper Protection checks for versions that don't have it such as legacy windows 10 or windows 7-8.1
 - Fix Uninstall Algorithms
 - -ATTRIB_HIDE powerplan
 - powercfg /POWERTHROTTLING
