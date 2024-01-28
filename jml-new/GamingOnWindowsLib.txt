@@ -27,7 +27,11 @@ Callable:
 - Install / Uninstall Scripts
 
 WIP:
+- Fix Tamper Protection checks for versions that don't have it such as legacy windows 10 or windows 7-8.1
+- Make EnableFSO.reg
 - Fix Uninstall Algorithms
+- -ATTRIB_HIDE powerplan
+- powercfg /POWERTHROTTLING
 - Compile GameModeLib.exe & DotRegQuery.exe for x86 and ARM64
 - "cncmd.exe" export %USERPROFILE%\Desktop\Test.zip {HKEY_LOCAL_MACHINE\SOFTWARE\AMD\CN value InstallDir} ELSE {cncmd.exe in C:\Program Files\AMD or last restor C:\Program Files (x86)\AMD}
 - NVIDIA Set Prefered Graphics Processor to High Performance
