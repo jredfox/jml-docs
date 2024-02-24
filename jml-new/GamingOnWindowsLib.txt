@@ -18,7 +18,7 @@ Windows Performance Settings FUCK WINDOWS:
 - Disable Function Key Lock
 - Disable Bitlocker (Makes Gaming Fast On SSD and Playable on an HDD)
 - Windows Defender Low CPU Priority (Makes Gaming possible without Monster PC)
-- Windows Defender Full Disabler (Disables Windows Defender Except FireWall On Startup)
+- Windows Defender Full Disabler (Disables Windows Defender Except FireWall and Scans On Startup)
 
 Callable:
 - Change Process Priority
@@ -27,17 +27,9 @@ Callable:
 - Install / Uninstall Scripts
 
 WIP:
-- Make EnableFSO.reg
-- Xbox GameBar New Notifications
-- Fix Tamper Protection checks for versions that don't have it such as legacy windows 10 or windows 7-8.1
-- Fix Uninstall Algorithms
-- -ATTRIB_HIDE powerplan
-- powercfg /POWERTHROTTLING
-- Compile GameModeLib.exe & DotRegQuery.exe for x86 and ARM64
-- "cncmd.exe" export %USERPROFILE%\Desktop\Test.zip {HKEY_LOCAL_MACHINE\SOFTWARE\AMD\CN value InstallDir} ELSE {cncmd.exe in C:\Program Files\AMD or last restor C:\Program Files (x86)\AMD}
-- NVIDIA Set Prefered Graphics Processor to High Performance
-- 3d Settings Intel UHD & Intel ARCH Graphics Control Pannel
-- Chec Mac Silicon windows 11 arm GPU settings powerplan
+- change installation between user and machine for both install and uninstall for clean install / uninstalling between multiple users
+- compile DLL version of GameModeLib (Main Program) and Wrapper calls for JNI(java)
+- create visual basic installer and uninstaller (added to control pannel unisntall) for GameModeLib on windows
 
 Help Wanted:
 - NVIDIA 3d Graphics Set Preffered GPU to dedicated programtically globally

@@ -1,0 +1,19 @@
+GET_ARCH.EXE
+- Language C#
+- Prints Arch(x64, x86, arm64, arm32)
+Load ISA_ARM64.dll (Microsoft Surfaces, M1-M3(Mac))
+Load ISA_ARM32.dll (Windows 8-8.1 Phones Tablets and Surfaces?)
+Load ISA_IA-64.dll (Intel Itanium 64 bit)
+Load ISA_X64.dll (AKA AMD64, Modern Intel 64 Bit Processors)
+Load ISA_X86.dll (One of these:{i586(Windows XP Intel Pentium), i686(Windows Vista-10 Intel Modern X86)}
+
+JML Java Edition Supported Arc:
+- X86 (windows, linux)
+- X64 (windows mac linux)
+- ARM64 (windows mac linux)
+- ARM32 (Stable Releases every 6 months only limited support as very few devices run on this)
+
+Not Supported Arcs:
+- PowerPC32 or PowerPC64 (Dinosaur Macs or Irrelevent Linux's)
+- IA-64 (Itanium) It can run on emulation x64 and they discontinued it because it sucks
+- Anything like RISC*, MIPS as PC's that are not dinousaurs do not use them

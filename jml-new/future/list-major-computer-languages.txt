@@ -41,7 +41,6 @@ arm64(windows 11, android, linux, mac)
 supported if help arrives:
 AMD64 (windows, linux) #x86_x64 capeable of running both x86 and x64 without emulation but if compiled directly into amd64 there are additional instructions
 Intel64 #same as amd64 but intel's impl behaves differently
-IA-32(servers & xeon)
 IA-64(servers & xeon)
 MIPS(32 and 64)
 SPARC(old)
