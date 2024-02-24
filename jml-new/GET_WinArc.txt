@@ -1,6 +1,6 @@
 GET_ARCH.EXE
 - Language C#
-- Prints Arch(x64, x86, arm64, arm32)
+- Prints Arch(x64, x86, arm64, arm32, IA-64)
 Load ISA_ARM64.dll (Microsoft Surfaces, M1-M3(Mac))
 Load ISA_ARM32.dll (Windows 8-8.1 Phones Tablets and Surfaces?)
 Load ISA_IA-64.dll (Intel Itanium 64 bit)
