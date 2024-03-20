@@ -27,9 +27,19 @@ Callable:
 - Install / Uninstall Scripts
 
 WIP:
-- change installation between user and machine for both install and uninstall for clean install / uninstalling between multiple users
+- Test Both Install & Uninstall.bat on a fresh windows
+- Test If Settings Get Retained for the new Users
+- NVIDIA set global preffered processor to NVIDIA High Performance
+
+Finalize Beta:
+- use visual studio to compile GameModeLib from now on :( prevents false positive virus things
+- create Policies HKCU\SOFTWARE\Policies\jredfox\GameModeLib and HKLM\SOFTWARE\Policies\jredfox\GameModeLib Values[DisableGameModeLib, DisableGPUEntries, DisablePowerPlan]. Or Files for MacOs & Linux in both root (if allowed read) & appdata
 - compile DLL version of GameModeLib (Main Program) and Wrapper calls for JNI(java)
 - create visual basic installer and uninstaller (added to control pannel unisntall) for GameModeLib on windows
+
+TODO after Windows:
+- MacOs(Priority maybe some other settings)
+- Linux(Priority, GPU Entry, Touchpad, PowerPlan, Maybe Some Other Settings)
 
 Help Wanted:
 - NVIDIA 3d Graphics Set Preffered GPU to dedicated programtically globally
