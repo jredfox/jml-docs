@@ -59,6 +59,7 @@ JML-MC-API:
 - colored lighting support (examples include cls and albedo mod)
 - enum support or conversion to object to support java 9+
 - tnt fix
+- Massive Memory Leak Fix From either Java GC not working correctly or LWJGL not dumping it's GC (Task Manager Windows Uses Way more memory then in game allocated, 1.12.2 seems to have fixed this issue refer to in game, leaving world or login into one)
 
 Multi threading:
 - network on separate thread

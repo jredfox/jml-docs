@@ -32,18 +32,18 @@ TODO:
 
 Finalize Beta:
 - use visual studio to compile GameModeLib from now on :( prevents false positive virus things
-- create Policies HKCU\SOFTWARE\Policies\jredfox\GameModeLib and HKLM\SOFTWARE\Policies\jredfox\GameModeLib Values[DisableGameModeLib, DisableGPUEntries, DisablePowerPlan]. Or Files for MacOs & Linux in both root (if allowed read) & appdata
+- create Policies HKCU\SOFTWARE\Policies\jredfox\GameModeLib and HKLM\SOFTWARE\Policies\jredfox\GameModeLib Values[DisableGameModeLib, DisableGPUEntries, DisableOEMGPUEntries, DisablePowerPlan]. Or Files for MacOs & Linux in both root (if allowed read) & appdata
 - compile DLL version of GameModeLib (Main Program) and Wrapper calls for JNI(java)
 - create visual basic installer and uninstaller (added to control pannel unisntall) for GameModeLib on windows
-- AMD GPU Entries < 2020
 - NVIDIA GPU Entries (Windows 7+)
+- AMD GPU Entries < 2020
 
 TODO after Windows:
 - MacOs(Priority maybe some other settings)
 - Linux(Priority, GPU Entry, Touchpad, PowerPlan, Maybe Some Other Settings)
 
 Help Wanted:
-- NVIDIA DDS (Dynamic Display Switch) 3D Setting support from editing NVIDIA3DSetting.cpp found in GameModeLib
+- NVIDIA DDS (Dynamic Display Switch aka MUX) 3D Setting support from editing NVIDIA3DSetting.cpp found in GameModeLib
 - NVIDIA RTX Help is it Always Enabled with driver or is it a setting
 - Palm Rejection, Palm Check, SmartSense
 - Unchecking Disable TouchPad while typing from a registry edit
