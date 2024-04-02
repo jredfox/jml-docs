@@ -27,6 +27,7 @@ Callable:
 - Install / Uninstall Scripts
 
 TODO:
+- Fix Power Throttling of UWP apps (happens even when power throtting is disabled)
 - When Uninstalling Don't Delete Reg Files if you Can't Import them (Says no global and has global or no user and has user)
 - SkipWithoutSID flags
 
