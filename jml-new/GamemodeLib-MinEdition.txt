@@ -1,0 +1,14 @@
+GamemodeLib Min Edition:
+gamemodelib.dpi=true
+gamemodelib.priority=HIGH
+gamemodelib.priority.HIGH.niceness=-10 #Overrides HIGH being -5 for non windows
+gamemodelib.powerplan.create=false #Creates plan each launch if it doesn't exist yet
+gamemodelib.powerplan.enable=false #Enables the power plan
+gamemodelib.gpuEntry=CURRENT|CHILDREN|PARENT
+gamemodelib.gpuEntry2=java*|javaw*|py*|python*|python2.7*|python3* #can be gamemodelib.gpuEntry<int>
+gamemodelib.gamemode=true #enables gamemode low latency on macOS Sonoma or higher and in Windows 10 or higher
+gamemodelib.windows.disableRecording=false #when enabled disables game recording which equals less lag (values: TRUE / FALSE, UNSET)
+gamemodelib.windows.gpuScheduling=true
+
+-Dgamemodelib.properties=config/gamemodelib.properies
+-Dgamemodelib.<property> will override the gamemodelib.properties file

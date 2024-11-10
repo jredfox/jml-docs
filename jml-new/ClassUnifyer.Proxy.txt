@@ -1,0 +1,9 @@
+ClassUnifyer.Proxy
+- super.super.super... calls for methods bypassing constructors
+- call classes in the default packages, extend classes in the default package etc. In Dev they will be under Import of DefaultPKG and in runtime it will be plain out default package. This is a silly java security that really has no reason to exist
+- ability to compile without all indirect deps present through bytecode dummy proxies
+- dynamic annotations @Annotation("com/example/Annotation", "key", "value", etc...)
+- Enum Object creation with resource location ids
+- CReflect ability to use reflection but almost as fast as direct method calls / field calls because it calls them from C
+- JavaFastReflect ability to use reflection but in a different way. Direct method / field calls that gets transformed into real calls in memory. Boolean for AT to make them public and even minus final. Boolean to use Wrapper for when Class / Method / Field isn't found FastReflect.getField(Object instance, "com/example/MyClass", "field"), FastReflect.func(Object instance, "com/example/Myclass", "method", "()V", boolean at, boolean useWrapper);
+- refactor libraries per version of the library allowing mutliple versions in the same instance not conflicting with each other

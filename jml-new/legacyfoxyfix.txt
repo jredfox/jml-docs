@@ -1,0 +1,24 @@
+Legacy Fix Agent Specific Fixes:
+Fix Java Applets
+LWJGL 24 bit Depth Fix if unspecified pixel depth
+Intel OpenGL Fix ( ARBMultitexture.glActiveTextureARB always should call  ARBMultitexture.glClientActiveTextureARB and GL13.glActiveTexture should always call GL13.glClientActiveTexture ) 
+File Proxy
+HTTP(s) Proxy
+HTTPS Fix for java 7 or higher (if TSLV1.2 isn't supported allow it)
+
+GameModeLib:
+- DPI-Fix
+- Process Prioirty Option
+
+Game Specific Code:
+RAM Leak Fix
+MouseFix
+
+Launcher Specific Fixes:
+Java Legacy Array Sort
+Sounds
+Skins
+Clean Instances
+Libraries
+Natives
+ASM Transformers plugins
