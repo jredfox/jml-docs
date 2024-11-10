@@ -24,6 +24,7 @@ ASM FrameWork
 {
    ASMP Bytecode Proxy for IDE #ASM-Cacheing
    Class Unifyer
+   Class Unifyer.Proxy
    ByteCode Utils
    Access Transformer
    ASM-Loader(order, cacher)
