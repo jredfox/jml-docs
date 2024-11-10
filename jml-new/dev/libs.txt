@@ -1,0 +1,28 @@
+OpenTerminal = Native CLI clients for your java project
+OpenConsole = Java Console that supports ANSI ESC colors, ANSI clear, ANSI text formatting and ANSI for title
+jredfox.logger=Logger but simple and no vunrabilities like log4j. will have simple options and easy to use and understand configs, colored error streams, logger levels, times, code line calls etc https://github.com/jredfox/OpenTerminal/issues/49
+jredfox.ipc=Inter Process Communication via SharedPipes, SocketPipes, or File Pipes
+jredfox.commons=needed for all my libs except open terminal
+jrefox.reflect=java reflection library. will only support java 8 and custom JDK's allowing reflection afterwards
+jredfox.urlproxy=java url proxies apis that allows for proxy redirection with easy to use apis
+jredfox.commands=java short library for processing commands. supports {command -f(flag single char) -fa(two flags) --fullNamed flag) "args\""
+jredfox.archiver=file de-duper and archive manager to store mass amounts of files without duplicates and to pull them out of the archive with ease
+anything from jml's project plans, anything planned, anything from minecraft mods
+jredfox.libloader=load jars into memory without rebooting, allow specified planning to reboot JVM with more arguments and to only have the launcher at 45MB
+
+JML-notes:
+1.6.4 base version
+needs HIGH DPI fix
+needs MIPMAPPING fix, options for anti-aliasing and anisotropic filtering
+needs AMD64 lwjgl fix
+needs OPENGL Compatability Profile Context
+java 8 and higher needs reflection, awt.*, javafx.*, -f make everything public in modding mode, assertions enabled, HTTP proxy fix, FileProxy, java agents registry, java args, method to set user.dirs
+lwjgl updated
+detect hardware changes(mic, mouse, speakers, headset)
+ensure proper GPU is being used on launch(dedicated)
+re-authenticate, uuid fix etc...
+font renderer issue
+font renderer 256 and truecolor RGBA as int
+trashcan args
+limit frame issue where when flying in creative even though it shows 60FPS it stuttering somehow
+vsync on chunk load gets 58-61 FPS when disabling it will always be > 60FPS
