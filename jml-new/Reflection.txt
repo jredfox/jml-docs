@@ -1,1 +1,16 @@
 take what I had written for the new jml and make sure it alo works with java 16+
+
+Faster Reflection:
+- MethodHandle if java 7 or higher
+- Lambda Factories for java 8 or higher
+- Need to patch the package modules to accept all packages if enabled
+
+Java 9+ APIs To Create
+##################################
+
+CReflect:
+- From Java --> C --> Java
+
+FastReflect:
+- Transform Fast reflect calls into direct method calls
+- AT the method / fields that are invoked if by itself
