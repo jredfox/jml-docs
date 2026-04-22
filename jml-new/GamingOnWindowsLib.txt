@@ -19,6 +19,7 @@ Windows Performance Settings FUCK WINDOWS:
 - Disable Bitlocker (Makes Gaming Fast On SSD and Playable on an HDD)
 - Windows Defender Low CPU Priority (Makes Gaming possible without Monster PC)
 - Windows Defender Full Disabler (Disables Windows Defender Except FireWall and Scans On Startup)
+- Control Panel --> Firewall --> Allow java* and python* / py.exe through the firewall
 
 Callable:
 - Change Process Priority
